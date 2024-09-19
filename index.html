@@ -2,127 +2,599 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/casino/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/casino/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/casino/assets/index-DvPDDfy5.css">
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <script type="module" crossorigin src="/casino/assets/main-Dlz4wNIw.js"></script>
+    <link rel="stylesheet" crossorigin href="/casino/assets/main-D76Kwnq5.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/casino/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+  <div class="container header__container">
+    <div class="header__logo">
+      <a href="/">
+        <img src="data:image/png;base64,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" alt="Logo" class="banner__logo-image"
+      /></a>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="bonus.html" class="header__nav-link">Bonuses</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header__nav-item">
+          <a href="app.html" class="header__nav-link">App</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Live</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Sports</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">More</a>
         </li>
       </ul>
     </nav>
+    <div class="header__actions">
+      <div class="header__lang">
+        <select class="header__lang-select">
+          <option value="at">AT</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+      <a href="#" class="header__button header__button--signup">Sign Up</a>
+      <a href="#" class="header__button header__button--login">Log In</a>
+    </div>
   </div>
 </header>
 
-
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+      <section class="promo">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/casino/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
+    <div class="promo__content">
+      <p class="promo__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
+        egestas eget purus, in dapibus imperdiet quis eget.
+      </p>
+      <a href="#" class="promo__button">
+        <span class="promo__icon promo__icon--app"></span>
+        <span class="promo__icon promo__icon--arrow"></span>
+        Mobile App
       </a>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
   </div>
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
+      <div class="live-events">
+  <span class="live-events__icon">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMCSURBVHgBzZnPitNQFMZP0rRaZ9PZ6NIWtyLjE5gKgpvB6c6FoCLoQpApgiuh4xNMXQhuZPoGCi4FJz6B9QkmLnXTDOgU+9fvi0mcdtI/SW/S/OBObm+Syddz7jk591aTmPT7fXM8Hm/pun5D07Qt9EsYLnmnHYzZGGP7hs9WPp+3JGkoYjgcNgaDQQdtHLEdoR10u92yqMYTth9D1Ky2tFBt0QW9Xm8XbmzIf/epwh6NRq8KhUJr3kVzBdJqsN6uJAjmajOXy9Vnng8b9Fz6Hl1TUgAi2/BSFUfnzLmwGyDuKyNU0sUyDKM6PahPD3huTVscMfns6cEJCyK6HuBwIGsEgVNH4DT9z4FAWK2Mk4c8ynpxEDQVfz4GLoZ59zIgjpRgqIb/wbUghUHgkWQIWHGTVnQtSOtJxkA8uPnXtSCtF8e9vx/fF+PqNSncvSfaxUuiGAdpZ1NjVQJTHkoMfu3cDvr57R0pbNeUCoXRqnSxKQrof/wg3Zcv3KMq3HIOR2VJefTzh/x591ZO4PrB50+yKvCsqa3yWjvt4jB0uJvz07h5S2Jiayw+JWYptUigTw6BdP7Z8zjz06HAscRkWYE+eVgyasTrkiJ9zMuT+tNI91CgIylBV1/YfxPlFsfAn2NRX85PkPOSOY9R4MrQQAS30bksCaBXrsi5R08iC/NB0fCdAi0IvCMKUZBefNoG1wOiCG1jA6+8mtvYV4BlcMWPVMNAiT0PExBGbGpjkPCd9xqWbET9D8xnCVYzlvsMkWCZ2ZEMgSqrUiwWbTdRs3KlFSU7tCiOndOLppJX9ieaE5fAhvWqvsDgVUcrcq9E1gw1+OLIxLuY69F1uprPnt5MCt36QNrhEsCUFGE+xkru+vR4aDWDC2sqE/giYLkv3DwKOxcqkPOR3yYNd/MZSMhm2M4WmVsP4kauTR+yqhD1MCjr3jNWg2tmzMuWqi1gpJGmt+muFl8o82UMYR0I24sqbOEe9Sy44Jd/kc4VYdmrKYOfIdCOWWt65Vw77s8QfwGGLmYNjJd8EQAAAABJRU5ErkJggg==" alt="Live Events Icon" />
+  </span>
+  <span class="live-events__label">LIVE EVENTS</span>
+  <span class="live-events__count">(143)</span>
+  <span class="live-events__icon--end">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC1SURBVHgB7ZTdDcIgFIUPhj70TTdwBEfQTXQDncARrBO4giPUSdoN5I2EX2+NTYhptAK+GL/kPADhC1xuAP5YaxvKQUo5Rw6MMf6RRim1RiqBMBQvEMuAsM8pqgwvhPdQffdZhe/qy4aEGM9Za70ry7LNJewQnPNZP5ggAe/9xTm3Cuc44mhJtimKon5e+FQoSHSkK1aMMTFqx9f7kF6xpiwRSyC7Uq9tkUr329CJKqrVFD/JDaRuCtvZaYPNAAAAAElFTkSuQmCC" alt="End Icon" />
+  </span>
+</div>
+
+      <section class="banner">
+  <div class="banner__rating">96/100 ★★★★★</div>
+  <h1 class="banner__title">
+    Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
+  </h1>
+  <button class="banner__button">Sign Up</button>
+</section>
+
+      <aside class="sidebar">
+  <div class="sidebar__title">Live Events (143)</div>
+  <ul class="sidebar__list">
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🏈</span> American Football
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🏀</span> Basketball
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🎳</span> Bowling
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🥊</span> Box
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">⚽</span> Football
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">⛳</span> Golf
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🏌️</span> Golf Club
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🛹</span> Skateboard
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🏓</span> Table Tennis
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🎾</span> Tennis Racket
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🏐</span> Volleyball
+      </a>
+    </li>
+    <li class="sidebar__list-item">
+      <a href="#" class="sidebar__list-link">
+        <span class="sidebar__list-icon">🏉</span> Buscetball
+      </a>
+    </li>
+  </ul>
+</aside>
+
+      <section class="section">
+  <div class="section__item">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASfSURBVHgBxVfNThtXFD7n2gRMWVhK25hsMItKgUbKgLrv8ASFXXeYJ4h5AswTUFZd4jwB5Amwd61UwUSqgB3TRYNVRYqrUjDIvqffuR67Y3tsx7DIkUbXM/e79373/DtFj5D55dXDuafPMtcfasEwTDbvZbPPcz9/8eVzf2ru2a+Neq0Rn0/TI4SJfDJmfX5pZfP2VjbqYVDvx2QyfAykx+x+ewCsxedT9EDJvfAKxPxjmwnn0ym+u/5wVenBLHs7zEYxIZ46cN7c03mO4ww9QPRwY3jPnU20i6fOhl7341i4oGNLeFuM3XLf+nATE9DD2ZgDIc6ypd33ZyelaCo7QIDZfTPSCqjptDCAm1wDKd7UAbfaeH9xUsp7XlZ0U6FqhyCevP4WkbfuEMOn+jhSROWJCagnd36z0N9u82Yr1LHRiG7EtPD1kreu2sHNj/X39LQUweINqQfqI7R/c2O343vzuMP1NrohblOuXQS7uW9XjmFbX6xZq138VlHMPL4RvvWvbYnd+Os8OBq1/1gCCLFL9fK+z+HV2cliL0lTxHZZSXGZms28agJT9dsbu5gUnh0ZmQdyLz2frB7OAYl9x4Y9EaqLtYU4DpoJMRT7iPsgvjkza9apz+6fTICtWwzTyX7t/LRME4lA9bwJwt7IM3JLsN8QMUyehhs2C/TmNIHA57KaAeGEoVA3BAdxyOdCn1E6JgjFPlkbBjLm7ido4gd4+obIVDByR3Pvw7MPcPO3ItPFYTA29xUMC10fqF38Eg4Dw0x1F8bC9VE4h33phWQNuPLH2vlwLDTvxkQnzC2vFtwtHiFYX8Ahhc477LxVOzsp9+MGMqFmPdz2lduEneP9EY1JREvqQzoOEOhbCyd+lbRHDwGN+8ys+Qi6RV1oW3YFCSdvbTund3FIPBo9uOVOdNsdkDiIp2wrdKRrn0zZRa2WiKiiI/viO38ogZiELHYtSjCDwlxCevaj21UdHipHw3E4sFEQ1K21KzQkFBMJwF6VP8+Cod6Ow11FvPnXLuKW/vQTHCD8BjPvkvB6EdSS6icTiIvrfAYJOHJIs3voego3d+SLtEpX5yfFcWsnIoDNS1F53ewhIK0t1wVB7UzmIMXmELjTr77xvP83Flea55dW9x5MgKwrIlWcWIl/VvM4u6aQmBBeruYjgNJT3A1deL2aoypi90cdMbIYRU7ow+PLHCvc6vE63v7T2tZSC+8/ysyqlpD7qZ3ZkYguEfdbNEYSCYB9dtQiZslrAwKv92eWVsJ20Wq3W0mFxYWnoQVKmEw0ATbUXv8yHtc9BFuyFbVa2i357YpJVZhlNwkPoqec0DGp9GhgJk1B45624ECvoUIvk6HDmeVV5AT5Po6LTFPI6RySEC62W4u6YySzvI5Y46upuN0F57Wp0b6CqBkOJaBJA0MZC8nVAk02brfkzi06tJQ4qdoByc6ra2oSakGyE1pbkXS6W56NbRVdOZ5EkHgklSp1XhvXzcTElkggUnHYeUcUFHhs+9p3vkbB7+2ueZR0OyKoKBwGgqdm3T8hkrql8a0Zk6p/NFYxOqb7PySJdEclMTpEaULsf6yM5pRQ/IH+AAAAAElFTkSuQmCC" alt="Play Review" class="section__icon" />
+    <span class="section__label">Play Review</span>
   </div>
-</article>
+  <div class="section__item">
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPfSURBVHgB5Va9bhtHEJ5ZGjGZqLjEMHK0i9BFAIsJkKOQACmZJxBdpiJdpgr1BBK7pJJcphJdpgrzBDx1KWL5DBiSO9OFrfMfQME2LAjmrr/Z+/GJFCXxTMAw/IEEl3uzM9/O7xF96mDKCfeqt6oUt2U9Mtx9vLu9QjlQoBwoL3ptVuoPZj4gZrlFfeFCmV8+2/NpRijKAaN4WX71SNfkK2uO92bFOcoBNrRviRhqKEXfRKzMPuVALgIw1oXrl1VBrb/b0muUA/lCQNyIVvwviPh2j1WuEMxcBcj+ChLwPpYDo/UvxSINDw/VfUPkyP/wXuDPou9crLROStVJ6wH++lAymHqiwJtwgXw6iVx5camDq6yjKlbl/LSjTsVzSiVqwVsObHXlPMN4CzfaTKWMGbx+bWrDQTCkydsnsoO9ne0r2WeXqrXbCI03zQvWc8x9hKySmtK6pWLWEosOvj0RKBZV+zj2iSwaz0TT0crYPchsiuz4cxBvW+OGboj34r0NFTMaPtrZXtNK34iUmKZbXVq7+K3nxezrpVLEHiS7T3Zv9cSIu1jrJ8bCu7g1G19kSp9zP3tWuiY8a5N0ROyHsAU94mGHy9/V+kjhurgeTc2BGyfYZ+4RGD26JrGD8S5u2xRCIH9dnlY8zzk85L6EYqoGMja0YkfOFhYuuFuK6QqY/4zHRTzZQE3/is72AHIl6xDiLbjtTzD/7eWzcOhWvVXmNEzeF199vf/qefjfMAwPXjwN/1q4WH4A5V8mZ7H+2+jPrhd4hB6Gy4odoi3kwEpahsjktmSyNrSCwbIx7QaXq56nSd2G5qFmdU1p/c9ZSzCxYSsIYZC9TCOyJSiUf5hm2Eox2+430nQzvPu/D2U3o3NRgmZlJ8CmHplSfrKVEjh/PqpfmWzj58TlcmskU9OwsRmMsDUlwRDTZvQ/qoKs7IR9iubGwcGbYILAILB1L3GvjJeREnMks1uxzXaEiSSDlerbZNLUebgTBOOyWR2SoHFyDo7rMRblaq1Xri4Z2xnHcLn60xG3llEFInupurR5mqzA/d6rizzO9eioV5JDNrkkjg3EtYtAbdEJQDo76CTraGcrhmlIpwGlLmWLVU+RTj2WjuMRqQbYNGJWLTizdaLChDpInGmivRNqwNYd/B4lgOHgG+l0lqUJjIzaOUKRWZYckOaDkvWPFUri5B4T1/eFG+eMe/XHenb/1DciOUTvCUzOqVHK9UY0T5zqgZPYzwMf3AOZYeS1UQW/Y3pVZGRqOkNtzwBF0agX3caYzt5uYAdeGgJ5TwObil1Hs9qhOcKkv+zgonPV/XHjLUpGjcqi0y12AAAAAElFTkSuQmCC"
+      alt="Casino Bonuses"
+      class="section__icon"
+    />
+    <span class="section__label">Casino Bonuses</span>
+  </div>
+  <div class="section__item">
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANvSURBVHgBxVbNThNRFD7ntggVEsaosejCujCBxoRpd65sn4DyBJQnKD4B7c5dYenKdukKeALoypgIjJvKsiwsjTGxJIQCofd4zp0ZHGs7bWHhWfT2/n3nO793EAISf2VnUKtduIOQVtnW0Zc9fx6Nz9sJf6I0zBKPiNAmglMYQ/jOLN+xGCQRxMS5ZJr+YQFQatUPijCGxJPpIgKs966rwP8aIjpwR2FLvhosgHZQQeOkfpDR2H076GJ8IVURa+Pz6SKEiO6qNcFiL5wGFYSK+FQhLhmGCgpWwrZgRIkOAc4TqiVAspmRJWbLGIvh4dRCqgFE1daRU7m1AqWwwIA285bpMYLOEagtdnSCVxJsjlhSCcXwgmH1Nxt3zEDUIK0z3+uOw2NW5mZX084gYMad5aGhmGFVFExOQj6w/1x+mpyqHKRNYczm5B+/tG1ElTNzgo3mUSCViRL+37kFe81z6Z5iRhtihYqoMlxDxtWOtn9Y+4yIVqIT6pCRVrx1hL9dsej+u37DriubM1qXFAepwX9MeqJSXqGQzQE2ygjJvSis3dEoV/CH8bOkzUngrjNG0exrWBXsiEzOfracmYdPqlxoKZDgGRywo9Pxj5MT8Jknr5nu+865Xr43gZfGoEjk3dmPZkPOzjya+8Rn/BjWSKnVk/r+tuuNHpFgx6Zxi6ln2M/bnY5ebTecNvQROTt1H8oIKi/ATCDXexb7XUzYtnV5Jf5maySDiEoXF7DtXzYkYpIUWPBcJ1mWFZf0YvVV4Cu5usJdCgScwEtPMKD+qtM5p+wgKwe2iobjcNVizePhSBMTYA/8mJnvyY4mrA0CFwmtZM5lx5jIbuKaWA7uSfPjpJBkCO3AGLYZjAVJS9C66t7CPINLPUgXfnFrBYapdFKlDqUye7baHNhUv8COpUDkaTL9yzylHBN+FtuItCRzZv9g2N2h74Fp2cKeqNas7+dOvu1zCyfxu+VXO4xrgZR+17RpKVlcl1zXBJuI2nHXuO+gWjM1glSSNW4JjnTbXqy+WdQFlbt5wD0K3MwKNwb7tMy7gB/cOyCKRlNwI9wqyH3EBwqrXGQX5gbth9cBwg5/vlTCzvDnSh5vq8CXft9OIpxFQ7NwpK+Ku8hIFozCdJD8Xwv4WSzHk6n1IWcsCmkIQ7opypeBFX4mXH4DhNZenWGNPFAAAAAASUVORK5CYII="
+      alt="Casino Bonuses"
+      class="section__icon"
+    />
+    <span class="section__label">Casino Bonuses</span>
+  </div>
+  <div class="section__item">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIySURBVHgB7VZBctNAEJxZ+26dwCYHnAsEcVm7irvzAvgBzgtiXmDnBcEvSHhBzAsSzlSMDpSdG+IQnOLkD1hDj2QJQUWRpVTJRZG+zEq7s9O107M7RP87uOV2hbaIemr8narF0zQBfzGb7lKFwMn7SsLQllGawKNn9k3L7Xxp7tk+3QOlCLRe2ONa3ZxBw5aNOQGJIZVEYQIanNgMmGmJ8jnCLx8kRk/c7gmVQC6BHdfaeBweN4Jr0GAVdG5m05EEwb5+g0z/8XM7yPItRaDp2mFARvP8Nlxs+FCtBr258nwdqxUTHITzNXOY5VuKgCHDamtrK8g5jB8Hx+a9kMRX74Kie6Sd5ZuF+l2TP3DEO+6ryfXVZ0+/mdkTEYvAI2igoenQ8Xo5Lhb2snxLEVBcz35vIMHqCEHPILpE9SrAeLySUJS3+mahUBUs5t4E+d9FLsY4jouIFSy+xZj9n/PLCRVE7gn8jXX+B02320dye8LyAdVwSiVRmEBCJAp6SvfE1t+C5ATikqoKSF9DUgTaUPM5VYi4C4oJLKHmj1QhmOU1SDgJgcX8sk8VYt2QJAQclNWIKkSsge03pYh+sOliFhkieW3QfycC3fwxRw7+H+t7ICTjjfekAmi+7JyzcE+v4/hFTOb2rFbSN8j702I+7W2657/blGaCuVFoed4C9IAD4agTYuK2WuTYv32zaJ5JlgFKG5oZ4wV9T3cg9zESNg6nOp10oEwfYvVxQNyhB+TgFx0pxrmUoY7VAAAAAElFTkSuQmCC" alt="Casino App" class="section__icon" />
+    <span class="section__label">Casino App</span>
+  </div>
+  <div class="section__item">
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFSSURBVHgB7ZexUcMwFIZ/KfRx6VS0kIM7JyxgJiAb2EyQbBBvAGxgNoAJ8ADgc8HFTACGKgxgPR4+7miIrRcf50Zfo0JPT5+kVzwBA6NsgvyjIITWIYQYMsVHWdyhj8DkOLiC0ivsCW+Qvm7yy5b53fgnQaiMflAKWzLqHtLNFV0Q4JEx59VLkf0Vc9CaweiwGQg3VfmUQMhkOr/mYfnzfBnEAr8cNnUghE8/7npjKwFOEvMpYvwDdgLfNUD4hBBeN+Z1HvoKNDWwyRMI8afzhG9v3RajMTBOwAk4ASfgBJyAExhcwKoh0aClP51FEMLrPOro/K0EOInHaTwIIYsYu66Y6JZGoxRCVF3H3BhGvQUM1Pb9+TGDEO4Jw35tuTYZf07WWiHiZGMI4RpYNDVgdLYrxuJvOEu7rrEV7qjfyny1t0AjcXq2oJoCSNE6qzqe7gvVbF7mQIzwSgAAAABJRU5ErkJggg=="
+      alt="CASINO MOBILE"
+      class="section__icon"
+    />
+    <span class="section__label">CASINO MOBILE</span>
+  </div>
+  <div class="section__item">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPwSURBVHgBxVa9bhtHEJ5ZMo6FKDGBWBblBMi5SWTCgE5CinShu3SWniDUE5B+ApJVSktdUompki5Ul85UGSCWacCwnCqnIhZjpyAQWbANa8ff7N1SJ/pOogBDHkC829XszDc/+83xXGVJ6D1KMfW+S+crX6QBRHuPtq/ROQoyHykIQ+9ZRiUoz4dVOkdhokuSAhCwMXfpHMV3fpGEfx7tGjSGSBVvEfa3AHMBqiHee3TWJh3Z4j68PSCWb7EbYL2J9dCrcfpM+UZYZWvuAl1n8Gh7tVxZakGhifUq1p2R3nwYwAGMm8BtWBvhtzd43I9GOpWlGs5u4GwbZ1vl64sdZv5erLk5ePxnj0YZOIO4PmFuwlD1eLRxL8NJD1GvpoGcJhMBEKGSjyDZQoloU5j6umChELm85YAx/43oO07nXQEwTHe0Wsw0FEvtvZ3ttQy1RpL2Jv5qNKHk8gDSXWMRF7E6htH2wXN7Lce5E+2TDy/YRdX1e2pDbeWdyWxCJhkKcSlR6Fprb5+lrkkAAUrSoqOyORlvQj52wBikmpaTrS0xpjV4eKSclitfhsuFIjfFyjrAdegkIDHHBDEC6oocBVTQn7nrYcMY/gV4QiwjXJ3bSGdj/+mTKMso9O+YgkEpuIwol6c/naX9/wZbWbrYH+4/21ufnpnbRbTarN/gTMOfYVdrYza0zkC3fnBg14ZRf5gXkTonNg3Vt9CHUU1xgGfnCbiDTpGr4BY86giydCh2xSDyuv7jteVVGGiNO/+sEoapdNbUuWbJHtpFJRix9maStdrsV2Ej76wX9WGNXdH3AnHdSJz24dOde91x5XIlbFoy9+HYNZIHq059DfUpxrrIUZZ63tm0DB72e6TUDt7AFY95uRSEpXFFowzgkMbPBGzknfsJOjLoGy3j7LHAlMrjD5Jh4aOZuSlofPdBkeenL8/+oU3jFf9/tte7NPP55j87937X9SdXruoNmUcD8ccz5VvonR+1maYvl6vajDp40HA/ZZ31ooEWL9APoLUQfn/lIAxLL1+Z+w69SGRxrf79q59JNmjAZfTAb5Qjh8IrWaVMRd5EGRsJx0RaSvYpKRjTsOhOpwkgItLOut8xwaARDS+4cetGtTyQgunmcYaWChnaQM0DXTtWTW4bv238iL0AIne6pcbtsVE97nhsem4h6lraHmcevPE1KNluUNJU+n2Amd+elI61zheneC01PXNZlU8y5KdbAgST0K4BRPtExxep7ut8yvQ8HYADgbKArWoSAxn1x4sX1PWkpY6npnQEgydQ50lZdSIAaSDj001IotgIBymDZ5qeEwMYB8KGQ3wpLSTbu27KnXAT8uQNI6rpuz7zdlsAAAAASUVORK5CYII=" alt="HOW TO SIGN UP" class="section__icon" />
+    <span class="section__label">HOW TO SIGN UP</span>
+  </div>
+  <div class="section__item">
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARoSURBVHgB7VdPTxtHFH9vbIObpupGosXOBZ8qQJWycMoNc+sNuOXW+BNgPgFw7Mnk1ludT2ByzAlz66GFrVQRpB66ObS4aqS6UktSl53X35v1gknW3o1Cb3nSanZn3rz5zfu/TDmourjcIbGHIhTgM4wi8gol8kWMzyT3iKnGxHikb4n3ydrd3mkQ5pHNWQw13/f+GZg/KJueM9PHAOnph1j7ECAeZ23KBFD53K+zNQcQGTCZ50LikXCI774wNGKnur3Tb8OEv7qw3ITUlr5f/GuXfv8pCCbJL1IWWVPTQYiDs5PvG1nsZ8+O9iqLyx5utl0ssgJZpXcBUCAbWDLEIncm8VUX/Kaw8WD/bnnK7g0GZlOYfcogk8VQmqIQt+kT84pX870xh7eITUtvzcYcvHpFm0L0J5a8dwYQBkFfRJ6osHLZNJP5yrxf01tXF5aOcXgTDgiQtKVgAWIHLHO6PUt+tg+AAGDHMK8B7jZCcjuF5dBGzutDOCElTsiWMqMgUwNKKhgqdcLcTeOQ+wGe+UiMWT07OaoncS/xuoZX+9fTo50s2bk04ASrajFaoa3eyVE7i98CJOWgXBr4P+k9gNwAWGLnQq6fnFxE6sO3kG4SwPS0bbsNTF9qDkjj0Xk46or7QEakmwSgCQnMj/DqseHO6yDc4cwdxGlNw/PGyvEoaWkeDPgAhcmZAaHZpjjc5gzJOuaRejl4eR6t9sOgn0fmWwFQwk0fItV+M24doBp58kRCuRNRQjjc3R7maETGhLB1jQvcpwupaQrOdNLXqJCHSaugd7fy4PYndzeh6geAUY4EVdJGT3vPjrvFW7O9UknWYP/7SNH3P5yp+h/NzH5we6bS/+tFb6IpxpoAqq6jvq8bFnj1VV3XWpC0XUpIzfsFlnps/zSSwAofsti9NMdM1YDWd6j6a70NjqwMC1BPlSGWvkLD1wDyO0DjY21eNYLv3ZfndqNUlN8w/8XVHp5XOYiQJjTj/f3i7OnoWW+EYWXR307qO8rw4+SWhuyG0wBKsnbFwvLz6D5rrZTL0AwaE8cndhX7D2MluPANkUOaswvLrbEA4kTimokQ9X2JCtJO1n45QXOJSqjv6PU6yudAohwnTYgxfOwOt7Tr+BMjiNlHl+z4FMRoZ3UNAAQ6W4Oxm2YvbThJtaLJhoal+cfvurj9VnxR9sb1AaM9RfmWWU8FAPXVdbgQfkJjaHpatC0L3YGR9YZS5obL4fl5DCaNAMBpZTRUrwGAXe+58SIKxwmJU7LdcOosmNann/nrl+aAmidmwGF9QHu3kgqAhesY+uN+JtAPij5qXxvXBSoUTceBht2z8r+uuw6bxE/84BKA/gG5F0Gvl4O094+FOQqdf+Qg/Fm5yEDEJBk1Jo7iFIumsjtuM5pP1sedCFPYuF1Xo+YCHfNyNx5M4vAxVReX9vG5Fv/hXt6Mrv566Q3bGk1MzvPzrydzWklRtBpXxUhIf7OTULqWVtPm4vm3X5fLi1Fdx/8Au+H5ZwDt+N8AAAAASUVORK5CYII="
+      alt="CASINO REVIEW"
+      class="section__icon"
+    />
+    <span class="section__label">CASINO REVIEW</span>
+  </div>
+  <div class="section__item">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFlSURBVHgB7ZYxTsMwFIbfs8pMRzPhESKGtCcIN4AT0J6AM/QEXKHcgBtQNgZUdaqykY2M4QD48dziyjIxBSl2hZRvsfxeFP/P77cTgJ6eA4PuRF7kBWrxCAkZtAURoSGCd4jLaVCAJnio18spROQkG1dGxECe5coGhYZj4pGrH7rxLqnLVeXOkZUQJIS0uKzLl8VuB5zcE8TF9Fz5QSugelsvC4iIPB/NEVH5cQEH5tsp2OcJ3imEmAJiQ6ivZJYrrmJz4oIC/Eq7Oi0C4dZ03r4suQe4qjkvPuOxMfPgDsS6H7QW91/3wISnw+QeEELfyGxcBD3Qtct9eNEJbsetIEgMLz7jxafWA8kFsAcW/KU1Rtx87n99EZnW2Jxt00/Punm3rSg+7vhaNtWH/wfigjk6LvuTCf3cPsO25gmviY5WQQGxIcKmLp8r8AQomY1eISLs9mGbYXY7gIAKIpL0t6vnX/EJ8OF711Js2OAAAAAASUVORK5CYII=" alt="PLAYER REVIEWS" class="section__icon" />
+    <span class="section__label">PLAYER REVIEWS (4)</span>
+  </div>
+  <div class="section__item">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOrSURBVHgBrVVPUhNdEO9u/VLh2xhXEl04rJRolRPKPeEEwgkIJ5CcgHCC4AkMJzCegLBzoWGssgBXjAtFV4wboCinn79+MxPGiFWCdFXy5vXr1//fr5n+QNMPw5ZjWWR2z4So5ohrdGlyEe5FpLr5dT8aXiTBk4x7jTBMHfeYuXWB/KeJ/f1JPjPdco5+c9Y5N8TfChyJy3wpbxD1MjzeyozDc6aO08oMLm96JSrtw91RUPzya3GZp6xLXpao71RnsK6YjOlkkYM7D8LVss2bxUd9FgcsPZfd7hzuvdsYnzWaWUSiAZwMJqMr80SRAR8x1b5l0fbtd7cx1wV/TW5ID/JHyIQPigsF5l2uYOXz/qhfC8JatUrPRXj1avX3XsTIXv/0lF4kcZTATht2XuIkQXaaVo7MgUfNLXZIkdL6l/1R1zvEvIWCBt5LpveIKKHL03zJkQUzWJ+dQ6apB97wcG9ngacfhzAsW5TVcsYin5riHTMO7waq2plsnL8lC0TEl3XRnDg5cU3LRL0xZ9kOkIUFoZTb3kmidVur/9PzwviX3dHSVY0b2V3TYbpMZ7UqWQM6euEXPHOUmJ54purQFpSinW21Q9dElYqueN2C4Myw04GtwjyPZ8gBvhPz1jDA193R9r9EPklxFCWIbIjPmpUlbz70lAsEqbcO9w2WSgYgjumgrAA1c/a76t7r1AKsbgZ+T/TdHJLMkxy5flBsCzsX0HWTZKiZpj98sLB7C0vCdxvNHbzz0FDLUgPAOLKsnBzrbetYugYq4Yx/aed7jlAC3jYh60hblbIOnZrygHEtBGM9vypt5qyW32NYiZO8I8n5Dq1W1CA4xukiQOPVRdD7t2R30QuvyHAAOo9PvW70Oa/ZqiqbHgnrQEKkoKWpdr59jDbyFBk4BXbuJ9klCeiJvuIw38YGOlbi6Ua4xiRde2mHe6PWeBYAsXas9hBs26AIwrB2diaYA7RcOHIFJxIDneNj3chnwTIC6/ug8p7jUrqKQWGHXRyuF2do1AF65RmytOTcf9HYgJwdZNFVFsZW5cyieom0vQbWLxbsYtr6jZ+2I1+O8TiGwT5qXrNBAUe69dlmG6k3J4aKQYRooJMBWG/isdLGXH73nIfZEpOio5iPsqFm9edlpCO0jHBKHZu24yAmslY8GROY/y2l5BKl86nIxEEWkIt/lcv4E7QtpKufd6PoV9k/0PTjpy1OU5QFGOHyeXEJsmhx7zu8G7gbMvj64e3wIrmfWU7lj6fPESQAAAAASUVORK5CYII=" alt="Complaints" class="section__icon" />
+    <span class="section__label">Complaints</span>
+  </div>
+</section>
+
+      <section class="bonus-section">
+  <div class="bonus-section__content">
+    <h2 class="bonus-section__title">100% BONUS UP TO 300€</h2>
+    <p class="bonus-section__subtitle">+100 free spins on your first deposit</p>
+    <a href="#" class="bonus-section__button">Get a bonus now</a>
+  </div>
+</section>
+
+      <section class="text-block-section">
+  <h2 class="text-block-section__title">100% UP TO 300€</h2>
+  <p class="text-block-section__description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas
+    eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras
+    elementum. Eget ultrices donec urna tellus duis ullamcorper consequat.
+  </p>
+</section>
+
+      <section class="rating-section">
+  <div class="rating-item">
+    <div class="rating-item__label">Bonus Offer</div>
+    <div class="rating-item__stars">
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star"></span>
+      <span class="rating-item__score">9/10</span>
+    </div>
+  </div>
+
+  <div class="rating-item">
+    <div class="rating-item__label">Betting Variety</div>
+    <div class="rating-item__stars">
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star"></span>
+      <span class="rating-item__star"></span>
+      <span class="rating-item__score">8/10</span>
+    </div>
+  </div>
+
+  <div class="rating-item">
+    <div class="rating-item__label">Mobile Experience</div>
+    <div class="rating-item__stars">
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star"></span>
+      <span class="rating-item__star"></span>
+      <span class="rating-item__star"></span>
+      <span class="rating-item__score">7/10</span>
+    </div>
+  </div>
+
+  <div class="rating-item">
+    <div class="rating-item__label">Payment Options</div>
+    <div class="rating-item__stars">
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star rating-item__star--active"></span>
+      <span class="rating-item__star"></span>
+      <span class="rating-item__score">9/10</span>
+    </div>
+  </div>
+</section>
+
+      <aside class="casino">
+  <header class="casino__header">CASINO</header>
+
+  <!-- <div class="casino__auth">
+      <button class="casino__auth-button casino__auth-button--login">Login</button>
+      <button class="casino__auth-button casino__auth-button--signup">Sign Up</button>
+    </div> -->
+
+  <div class="casino__games">
+    <div class="casino__game">
+      <img
+        src="/casino/assets/game-one-Bhw6HYE4.png"
+        alt="Game 1"
+        height="120"
+        class="casino__game-image"
+      />
+    </div>
+    <div class="casino__game">
+      <img
+        src="/casino/assets/game-two-C4TwkFvQ.png"
+        alt="Game 2"
+        height="120"
+        class="casino__game-image"
+      />
+    </div>
+    <div class="casino__game">
+      <img
+        src="/casino/assets/game-three-B8_qyuRx.png"
+        alt="Game 3"
+        height="120"
+        class="casino__game-image"
+      />
+    </div>
+    <div class="casino__game">
+      <img
+        src="/casino/assets/game-four-DFzTU1by.png"
+        alt="Game 4"
+        height="120"
+        class="casino__game-image"
+      />
+    </div>
+    <div class="casino__game">
+      <img
+        src="/casino/assets/game-five-DbT7jydS.png"
+        alt="Game 5"
+        height="120"
+        class="casino__game-image"
+      />
+    </div>
+    <div class="casino__game">
+      <img
+        src="/casino/assets/game-six-VV2fHicq.png"
+        alt="Game 6"
+        height="120"
+        class="casino__game-image"
+      />
+    </div>
+  </div>
+</aside>
+
+      <section class="quick-facts">
+  <h2 class="quick-facts__title">QUICK FACTS</h2>
+  <ul class="quick-facts__list">
+    <li class="quick-facts__item">
+      <span class="quick-facts__list-icon">🌐</span>
+      <span class="quick-facts__label">Website</span>
+      <span class="quick-facts__value">
+        <a href="https://casinoname.com/">casinoname.com</a>
+      </span>
+    </li>
+    <li class="quick-facts__item">
+      <span class="quick-facts__list-icon">🎮</span>
+      <span class="quick-facts__label">Game Types</span>
+      <span class="quick-facts__value"
+        >Sportsbook, Casino, Live Games, Live Casino</span
+      >
+    </li>
+    <li class="quick-facts__item">
+      <span class="quick-facts__list-icon">💳</span>
+      <span class="quick-facts__label">Deposit Methods</span>
+      <span class="quick-facts__value"
+        >Visa, Mastercard, Maestro, PayPal, Skrill, Neteller, Trustly, Bitcoin,
+        Bank Transfer, Entropay, ecoPayz, Neosurf</span
+      >
+    </li>
+    <li class="quick-facts__item">
+      <span class="quick-facts__list-icon">🏦</span>
+      <span class="quick-facts__label">Withdrawal Methods</span>
+      <span class="quick-facts__value"
+        >Visa, Mastercard, Maestro, PayPal, Skrill, Neteller, Trustly, Bitcoin,
+        Bank Transfer, Entropay, ecoPayz, Neosurf</span
+      >
+    </li>
+    <li class="quick-facts__item">
+      <span class="quick-facts__list-icon">⚽</span>
+      <span class="quick-facts__label">Betting Functions</span>
+      <span class="quick-facts__value">Live betting, cash out</span>
+    </li>
+    <li class="quick-facts__item">
+      <span class="quick-facts__list-icon">🎰</span>
+      <span class="quick-facts__label">Casino Game Types</span>
+      <span class="quick-facts__value">Slots, table games</span>
+    </li>
+    <li class="quick-facts__item">
+      <span class="quick-facts__list-icon">🏢</span>
+      <span class="quick-facts__label">Casino Provider</span>
+      <span class="quick-facts__value"
+        >1X2 Network, Amatic Industries, Apollo Games, Asia Gaming and
+        more</span
+      >
+    </li>
+    <li class="quick-facts__item">
+      <span class="quick-facts__list-icon">📱</span>
+      <span class="quick-facts__label">Apps</span>
+      <span class="quick-facts__value">iPhone, Android</span>
+    </li>
+    <li class="quick-facts__item">
+      <span class="quick-facts__list-icon">📅</span>
+      <span class="quick-facts__label">Founded Year</span>
+      <span class="quick-facts__value">2017</span>
+    </li>
+  </ul>
+</section>
+
+      <section class="sportsbook">
+  <h2 class="sportsbook__title">SPORTSBOOK REVIEW</h2>
+  <p class="sportsbook__description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas
+    eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras
+    elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim
+    nunc neque tristique adipiscing varius sit tristique. Sit parturient eget
+    pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in
+    mollis faucibus ut. Magna in neque tristi.
+  </p>
+
+  <h3 class="sportsbook__subtitle">LINEUP OF THE SPORTS</h3>
+  <p class="sportsbook__description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas
+    eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras
+    elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim
+    nunc neque tristique adipiscing varius sit tristique. Sit parturient eget
+    pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in
+    mollis faucibus ut. Magna in neque tristi.
+  </p>
+
+  <h3 class="sportsbook__subtitle">BETTING TYPES</h3>
+  <p class="sportsbook__description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas
+    eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras
+    elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim
+    nunc neque tristique adipiscing varius sit tristique. Sit parturient eget
+    pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in
+    mollis faucibus ut. Magna in neque tristi.
+  </p>
+
+  <h3 class="sportsbook__subtitle">LIVE BETTING</h3>
+  <ul class="sportsbook__list">
+    <li class="sportsbook__list-item">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+    <li class="sportsbook__list-item">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+    <li class="sportsbook__list-item">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+    <li class="sportsbook__list-item">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+  </ul>
+
+  <button class="sportsbook__cta">SIGN UP</button>
+</section>
+
+      <section class="player-reviews">
+  <h2 class="player-reviews__title">What Other Players Have to Say</h2>
+  <div class="player-reviews__slider">
+    <div class="player-reviews__items">
+      <article class="player-reviews__item">
+        <img src="/casino/assets/jos-CTqDwbx4.png" alt="Joshua" />
+        <p class="player-reviews__name">Joshua</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="player-reviews__item">
+        <img src="/casino/assets/mark-ClHwjoFd.png" alt="Mark" />
+        <p class="player-reviews__name">Mark</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="player-reviews__item">
+        <img src="/casino/assets/jos-CTqDwbx4.png" alt="Joshua" />
+        <p class="player-reviews__name">Joshua</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="player-reviews__item">
+        <img src="/casino/assets/mark-ClHwjoFd.png" alt="Mark" />
+        <p class="player-reviews__name">Mark</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+    </div>
+
+    <button class="player-reviews__prev">❮</button>
+    <button class="player-reviews__next">❯</button>
+  </div>
+</section>
+
+      <section class="customer-support">
+  <h2 class="customer-support__title">Customer Support</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget est a
+    purus dignissim aliquet eget eu sapien. Donec auctor vehicula lorem, eu
+    suscipit est luctus sit amet.
+  </p>
+  <div class="customer-support__contact-options">
+    <div class="customer-support__option">
+      <span class="customer-support__icon">💬</span>
+      <span>Chat</span>
+    </div>
+    <div class="customer-support__option">
+      <span class="customer-support__icon">📞</span>
+      <span>Phone</span>
+    </div>
+    <div class="customer-support__option">
+      <span class="customer-support__icon">✉️</span>
+      <span>Email</span>
+    </div>
+  </div>
+  <div class="customer-support__info">
+    <div class="customer-support__info-item">
+      Email Technical Support:
+      <a href="mailto:support@gmail.com">support@gmail.com</a>
+    </div>
+    <div class="customer-support__info-item">
+      Online Partnership Queries:
+      <a href="mailto:partnerships@gmail.com">partnerships@gmail.com</a>
+    </div>
+    <div class="customer-support__info-item">Live Chat: Available</div>
+    <div class="customer-support__info-item">
+      Address: Brooklyn, 12 Lyc Building Block, 1st floor, PostOffice 151,
+      20200, Oslo, Norway
+    </div>
+    <div class="customer-support__info-item"><a href="#">Google Maps</a></div>
+  </div>
+</section>
+
+      <section class="faq">
+  <h2 class="faq__title">FAQ</h2>
+  <div class="faq__item">
+    <div class="faq__question">Question?</div>
+    <div class="faq__answer">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+      vero! Iure est ducimus earum exercitationem aperiam dignissimos
+      perferendis? Minima maiores ut beatae, aliquid iusto odit repellat ea
+      voluptatem dicta recusandae!
+    </div>
+  </div>
+  <div class="faq__item">
+    <div class="faq__question">Question?</div>
+    <div class="faq__answer">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem mollitia
+      distinctio veritatis, minima labore repellat assumenda facilis incidunt
+      repellendus omnis debitis in explicabo corrupti nostrum odio dolor quis
+      ducimus sunt!
+    </div>
+  </div>
+  <div class="faq__item">
+    <div class="faq__question">Question?</div>
+    <div class="faq__answer">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+      deleniti distinctio iusto hic? Iusto porro earum molestias, eaque aperiam
+      architecto ex accusamus velit numquam, doloremque perferendis cumque.
+      Delectus, inventore cupiditate.
+    </div>
+  </div>
+</section>
 
     </main>
-
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="footer__text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget est a
+    purus dignissim aliquet eget eu sapien. Donec auctor vehicula lorem, eu
+    suscipit est luctus sit amet.
+  </div>
+
+  <div class="footer__age-restriction">
+    <span class="footer__age-restriction-icon">18+</span>
+  </div>
+
+  <div class="footer__logo">
+    <a href="/">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAA4CAYAAAAB3jHPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAZwSURBVHgB7ZtNTFRXFMfvoI2NbYYmbVnVATddzGDSNmqQWahpIgGTfqRQcQNWgyTYNhA7bNpISFkBRqtNGzW2xQ1aXLgpRBcoC6CpXbQR2LSmVGwXupFJ202J9v4fvY/DMO9r3tzHe5PzSyY8mHnvvDP3/84599xL7PnEO1/HnsSqBMMUmaUNS+9tjImyvSImKgXDaKBMMIxGWGCMVlhgjFZYYIxWWGCMVlhgjFZYYIxWWGCMVlhgjFZYYIxWWGCMVlhgjFZYYIxWNooSZstLLxovxWL2bzE797soJqViQxehEFims0l0dzUZx/2nRsTA6RFRKLU1SVG/b4c42LRHlMefWfP+vfsPxOT0nGFj4f5DUQgY7ObGPdLGbnlcseZ9CGByelZcvjohxm7cFoXg5AdsjF6/7cuPICiZCBaPbxZ9PYfEQTnwdiSkIBJNFcbADY/c8jRAsNF+eL/5MFgBQTTU7TReEPRbB3o92ejufFe0H2lwtAEfCvEjSEpCYIgo1670GOJRTH4/J8bkE44vHU87qE5Wifq6HSItowPA4KR3JV0JADaGLnwktiW3mn/LZv+Rg3tTzJB0VZ2sNISlUhru6eZYv/jg+BeO0SwIP4Im9kKiaV7+XNcdrX5SZO6gzMzNi096h+TAzFqeg8/iHCUCpyiDqAKRKBsQ1se938gUeMvSBlIofFI2IA7YwP258QP3AlEW04+gWSr7d2vkZ5F0UBAh8AXbDQrAQOyt7zYHG+efPdlh+XmkXjrwONdOXADv08FGSkMELJdizcfZwY5VDwlsuPHjtfQx815w/iVpI0xEWmCIErlPvEojTqiIogSQrkkZ18sFaUjVdYhcOAcD6wYVURbleQD3elTWcPn8SO9KmX60tg269gMgYis/qmUKP3q4QYSFSAss09VoHr/vQVwKfB4pWdEsZ4VrbHSuFPT9p791LS4FPt/aNmCIH698KZIW9LgfrzbgB66tcJqEBElkBYbIQqPXlEM6sQLpRUUYRDEU0ArUNiqyYBAvy9laISDVwQ5euYU+bCib8MMp9drZoOm4tiYlwkBkBVZNZnOj138QfqDCqf1/ZgbojBEDqIRYTBr27VyxMV3YQ6JAX0yB2WwYiLDAVr5ATOX9QNNWgnTMU8TGzKyezjnt0N+xmGG6hfpBI/F6Etk+2Oqlk+JFljjpmtMOut3UH6k109ko3IIHQrVi6KzSb3thgdRuiS0VIgyU9FqkW7I+BUprNTfcsxBSviWhqBNZgdGnHWltShRO3KI3RWelNGLmu5fhkQlhx7ZUpZm2sh5nu24pjz9rHi9m/xJhILICo2nRbvDdQOsVWsdQEdvZwATAqSk6dCFj2qERLHeZyQ9B1IxeiWyRT6f7WIfzQ33ddvOYDjgVTYNc+/MDFc8UmZRQQad9thbSZAbsd+JTLCIrMAwM7V8V2vex66fhdyUy1EfNDjs1rEArgtqgoqLtj+pUVcF+0DrQT1+w2ERWYKiPzl/8zvy9u8v9LI5yhqxB0q6+YuDUVfMYKwdWa4l2fNrTYmujGH5cOp8xj4cLbNbqINJLRee+Gl21lkiXddzQd2L1Ina+Ljqtr9TuBS8ic2Mj14++E63CC93Sb0Q/ZeOKw4QjSCItMESxFrkwrMAa3JnBDseiH7NGFN1qDVAtYlvx4fEvVy0mj4/1F9WG8kOlyvYj+137gV0gGbL2iIVyr2uZOtmwuTzVKX8+J9YRPLWqfkA3+9e7fxo1T75Xbs/qwcNHxuDj/Kc3PSXbAcub8TBjU20GnKPW/LDT4POTx+QyUJX5Hgb+l7t/WN4frjN240ej0Ff3ARGgfkNrYJO0C2Dj9d2viAOyVvNqA36MT/ws3n4j7cmP7a++bF4DC97jEz+JsPA49viz0G04dOJNOVD5CtjczXduQLGN6HRn7jdXn4eNvp5WY6+8FxteokohfqgtPm79CApsOCyZTr7afIeZHqKLXU8JU3gscHvduQAbLW0Dho1mbFOuSWqx4cUPPGznLo563qoUFKGIYHhq3T6xy+0J5y8T10QqwXVRqyC9GP/tIwdloUg1ClKlsoEXIgnsLLceijPgQfihC0SwUAiMKU1KYk8+E25YYIxWWGCMVlhgjFZYYIxWWGCMVlhgjFZYYIxWWGCMVlhgjFZYYIxWWGCMVlhgjFZYYIxWWGCMVjaKsieHBMNo4NH8tfn/AGA8Wyv5RWvaAAAAAElFTkSuQmCC" alt="Logo" class="banner__logo-image"
+    /></a>
+  </div>
+  <div class="footer__logo">
+    <a href="/">
+      <img src="data:image/png;base64,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" alt="Logo" class="banner__logo-image"
+    /></a>
   </div>
 </footer>
 
-
+    <!--  -->
   </body>
 </html>
