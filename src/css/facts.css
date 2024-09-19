@@ -1,0 +1,52 @@
+.quick-facts {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: auto;
+}
+
+.quick-facts__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.quick-facts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-facts__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.quick-facts__label {
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+}
+
+.quick-facts__value {
+  flex: 2;
+  text-align: right;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .quick-facts__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quick-facts__value {
+    text-align: left;
+    margin-top: 5px;
+  }
+}

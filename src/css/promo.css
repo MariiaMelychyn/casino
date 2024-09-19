@@ -1,0 +1,70 @@
+/* Promo section */
+.promo {
+  background-color: #f7f7f7;
+  padding: 16px 0;
+}
+
+.promo__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__text {
+  font-size: 16px;
+  color: #666;
+  margin-right: 20px;
+  max-width: 70%;
+}
+
+.promo__button {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.promo__button:hover {
+  background-color: #0056b3;
+}
+
+.promo__icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.promo__icon--app {
+  background-image: url('../images/promo/ant-design_apple-filled.png');
+  background-size: cover;
+}
+
+.promo__icon--arrow {
+  background-image: url('../images/promo/ant-design_android-filled.png');
+  background-size: cover;
+  margin-left: 8px;
+}
+
+/* Адаптивність */
+@media screen and (max-width: 768px) {
+  .promo__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo__text {
+    margin-bottom: 12px;
+    max-width: 100%;
+  }
+
+  .promo__button {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,96 @@
+.customer-support {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.customer-support__title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.customer-support__contact-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.customer-support__option {
+  margin: 10px;
+  padding: 10px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: center;
+}
+
+.customer-support__icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.customer-support__info {
+  text-align: left;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.customer-support__info-item {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .player-reviews__items {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .player-reviews__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .customer-support__contact-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customer-support__option {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .faq__question {
+    font-size: 18px;
+  }
+
+  .faq__answer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-support__title,
+  .faq__title,
+  .player-reviews__title {
+    font-size: 20px;
+  }
+
+  .customer-support__option {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .customer-support__icon {
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}

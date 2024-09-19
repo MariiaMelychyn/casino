@@ -1,44 +1,94 @@
 .header {
-  padding: 20px 0;
+  background-color: #1e2d39;
+  padding: 16px 0;
 }
-.nav {
+
+.header__container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+
+.header__logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
-.nav-list {
+
+.header__nav {
+  display: none;
+}
+
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav-item {
+  margin-right: 16px;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+.header__nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #223e50;
+  border-radius: 8px;
+}
+
+.header__nav-link:hover {
+  background-color: #2a5067;
+}
+
+.header__actions {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
 }
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+
+.header__lang-select {
+  background-color: #223e50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 16px;
+  border-radius: 8px;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+.header__button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+
+.header__button--signup {
+  background-color: #ff5722;
+  color: white;
+  margin-right: 16px;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.header__button--signup:hover {
+  background-color: #ff7043;
+}
+
+.header__button--login {
+  background-color: #4caf50;
+  color: white;
+}
+
+.header__button--login:hover {
+  background-color: #66bb6a;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: block;
+  }
 }

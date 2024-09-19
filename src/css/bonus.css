@@ -1,0 +1,28 @@
+.bonus-section {
+  /* background-color: #f5f8fa; */
+  background: url('../images/bonusbg.png') no-repeat center center/cover;
+  padding: 20px;
+  border-radius: 10px;
+  height: 384px;
+  max-width: 925px;
+}
+
+.bonus-section__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bonus-section__subtitle {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bonus-section__button {
+  padding: 10px 20px;
+  background-color: #f67220;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}

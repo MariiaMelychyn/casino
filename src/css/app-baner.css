@@ -1,0 +1,65 @@
+
+.banner {
+    background: linear-gradient(45deg, #2c75dd, #ff9a00);
+    padding: 20px;
+    border: 2px solid #00a6ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .banner__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+ 
+  .banner__logo {
+    margin-right: 20px;
+  }
+  
+  .banner__logo-image {
+    width: 100px;
+    height: auto;
+  }
+  
+
+  .banner__button {
+    background-color: #ff6a00;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .banner__button:hover {
+    background-color: #ff5000;
+  }
+  
+
+  .banner__store-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .banner__store-link img {
+    width: 120px;
+    height: auto;
+  }
+  
+
+  .banner__store-link--appstore img {
+    width: 140px;
+  }
+  
+  .banner__store-link--googleplay img {
+    width: 140px;
+  }
+  

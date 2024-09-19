@@ -1,0 +1,10 @@
+:root {
+  --main-color: #fafafa;
+  --bg-color: #1c1d20;
+  --btn-color: #ed3b44;
+  --btn-hover-color: #e0373f;
+  --gray-color: #3b3b3b;
+  --support-text: #242527;
+  --cards-color: #1c1d20;
+  --cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

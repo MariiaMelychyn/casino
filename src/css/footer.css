@@ -1,21 +1,35 @@
 .footer {
-  padding: 20px 0;
-}
-.footer-desc {
+  background-color: #001f3f;
+  color: white;
   text-align: center;
-}
-.footer-link {
+  padding: 20px;
+  margin-top: 20px;
   position: relative;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+.footer__logo {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.footer__text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer__age-restriction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.footer__age-restriction-icon {
+  background-color: #ff0000;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: 10px;
 }

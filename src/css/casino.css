@@ -1,0 +1,64 @@
+.casino {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.casino__header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Блок авторизації */
+.casino__auth {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.casino__auth-button {
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.casino__auth-button--login {
+  color: #4caf50;
+}
+
+.casino__auth-button--signup {
+  color: #f44336;
+}
+
+.casino__auth-button:hover {
+  background-color: #ddd;
+}
+
+/* Блок ігор */
+.casino__games {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.casino__game {
+  text-align: center;
+}
+
+.casino__game-image {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .casino__games {
+    grid-template-columns: 1fr;
+  }
+}
