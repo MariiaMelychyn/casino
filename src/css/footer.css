@@ -1,10 +1,10 @@
 .footer {
-  background-color: #001f3f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+  border-radius: 6px;
+  width: 925px;
+  height: 341px;
   position: relative;
+  background: #fff;
+  padding: 35px 20px 36px 20px;
 }
 
 .footer__logo {
@@ -16,8 +16,27 @@
   margin-top: 20px;
   font-size: 14px;
   color: #ccc;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #192a32;
+  margin-bottom: 30px;
 }
-
+.footer__note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #192a32;
+  margin-bottom: 26px;
+}
+.footer__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
 .footer__age-restriction {
   display: flex;
   align-items: center;
@@ -27,9 +46,13 @@
 }
 
 .footer__age-restriction-icon {
-  background-color: #ff0000;
-  color: white;
-  border-radius: 50%;
-  padding: 5px 10px;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 85%;
+  padding: 15px 10px;
   margin-left: 10px;
+}
+.footer__logos {
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,28 +1,46 @@
 .bonus-section {
-  /* background-color: #f5f8fa; */
   background: url('../images/bonusbg.png') no-repeat center center/cover;
   padding: 20px;
   border-radius: 10px;
   height: 384px;
   max-width: 925px;
+  margin: 20px;
+  padding: 90px 0 90px 20px;
 }
-
+.bonus-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 494px;
+}
 .bonus-section__title {
-  font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #192a32;
   margin-bottom: 10px;
 }
 
 .bonus-section__subtitle {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #192a32;
 }
 
 .bonus-section__button {
-  padding: 10px 20px;
-  background-color: #f67220;
-  color: white;
-  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: #fcfcfc;
   text-decoration: none;
+  box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
+  background: #ec622b;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  padding: 12px 30px;
+  width: 214px;
+  height: 48px;
 }

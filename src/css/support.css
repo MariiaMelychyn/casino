@@ -2,12 +2,32 @@
   background-color: #fff;
   padding: 20px;
   margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+  width: 925px;
+  background: #fff;
+  position: relative;
+  background: url(/images/support.png) no-repeat center center / cover;
 }
-
+.customer-support__info-label {
+  margin-right: auto;
+}
 .customer-support__title {
   font-size: 24px;
   margin-bottom: 15px;
   text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #192a32;
+  text-align: left;
+}
+.customer-support__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #192a32;
 }
 
 .customer-support__contact-options {
@@ -26,6 +46,11 @@
   align-items: center;
   width: 150px;
   justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: #192a32;
 }
 
 .customer-support__icon {
@@ -36,14 +61,33 @@
 .customer-support__info {
   text-align: left;
   padding: 20px;
-  background-color: #f9f9f9;
   border-radius: 5px;
 }
 
 .customer-support__info-item {
   margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #192a32;
+  border-bottom: 1px solid #192a32;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #192a32;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
-
+.email {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #2e9344;
+}
 @media (max-width: 768px) {
   .player-reviews__items {
     flex-direction: row;
@@ -93,4 +137,8 @@
   .footer {
     font-size: 14px;
   }
+}
+
+.customer-support__info-item span {
+  max-width: 484px;
 }

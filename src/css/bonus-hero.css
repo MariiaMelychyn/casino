@@ -1,6 +1,9 @@
 .bonus-hero{
     position: relative;
     background: url('../images/bonus-hero.png') no-repeat center center/cover;
-    height: 400px;
-
+    border-radius: 6px;
+    width: 1240px;
+    height: 384px;
+    margin: 0 auto;
+    background: rgba(20, 30, 85, 0.5), url("../images/bonus-hero.png");
 }

@@ -1,15 +1,20 @@
 .quick-facts {
-  background-color: #f9f9f9;
-  padding: 20px;
+  background: #fff;
+  padding: 32px 0 32px 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 700px;
   margin: auto;
+  border-radius: 6px;
+  width: 925px;
 }
 
 .quick-facts__title {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #192a32;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -23,20 +28,27 @@
 .quick-facts__item {
   display: flex;
   justify-content: space-between;
+  gap: 8px;
   padding: 10px 0;
   border-bottom: 1px solid #e0e0e0;
 }
 
 .quick-facts__label {
-  font-weight: 600;
-  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #192a32;
   flex: 1;
 }
 
 .quick-facts__value {
   flex: 2;
-  text-align: right;
-  color: #666;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #192a32;
 }
 
 @media (max-width: 600px) {

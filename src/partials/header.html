@@ -2,14 +2,14 @@
   <div class="container header__container">
     <div class="header__logo">
       <a href="/">
-        <img src="images/logo.png" alt="Logo" class="banner__logo-image"
-      /></a>
+        <img src="images/logo.png" alt="Logo" class="banner__logo-image" />
+      </a>
     </div>
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item">
           <a href="bonus.html" class="header__nav-link">
-            <span class="icon icon-bonus"></span> Bonuses
+            <span class="icon icon-bonus" data-i18n="Bonuses"></span> Bonuses
           </a>
         </li>
         <li class="header__nav-item">
@@ -35,8 +35,54 @@
           <option value="en">EN</option>
         </select>
       </div>
-      <a href="#" class="header__button header__button--signup">Sign Up</a>
-      <a href="#" class="header__button header__button--login">Log In</a>
+      <a
+        href="#"
+        class="header__button header__button--signup"
+        id="openSignupForm"
+        >Sign Up</a
+      >
+      <a
+        href="#"
+        class="header__button header__button--login"
+        id="openLoginForm"
+        >Log In</a
+      >
+      <!-- Кнопка Log Out, яка з'явиться після реєстрації -->
+      <a
+        href="#"
+        class="header__button header__button--logout"
+        id="logOutButton"
+        style="display: none"
+        >Log Out</a
+      >
     </div>
   </div>
 </header>
+
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeSignupForm">&times;</span>
+    <h2 class="close_title">Sign Up</h2>
+    <form id="signupForm">
+      <label for="signupUsername">Username:</label>
+      <input type="text" id="signupUsername" name="username" required />
+      <label for="signupPassword">Password:</label>
+      <input type="password" id="signupPassword" name="password" required />
+      <button type="submit" class="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<div id="loginModal" class="modal">
+  <div class="modal-content modal-content-in">
+    <span class="close" id="closeLoginForm">&times;</span>
+    <h2 class="close_title">Log In</h2>
+    <form id="loginForm">
+      <label for="loginUsername">Username:</label>
+      <input type="text" id="loginUsername" name="username" required />
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="password" required />
+      <button type="submit" class="submit">Log In</button>
+    </form>
+  </div>
+</div>
