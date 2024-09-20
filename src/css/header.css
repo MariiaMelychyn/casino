@@ -130,7 +130,6 @@
   background-image: url('../images/header/iPhone.png');
 }
 
-
 .modal {
   display: none;
   position: fixed;
@@ -149,7 +148,7 @@
   border-radius: 8px;
   width: 300px;
 }
-.modal-content-in{
+.modal-content-in {
   background-color: #0fa810;
   margin: 15% auto;
   padding: 20px;
@@ -163,38 +162,39 @@
   font-weight: bold;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-.close_title{
+.close_title {
   font-weight: 600;
-font-size: 16px;
-line-height: 1.28;
-text-transform: uppercase;
-color: #fcfcfc;
-margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 30px;
 }
-.submit{
+.submit {
   background: #1a3769;
   border-radius: 16px;
-padding: 12px 24px;
-width: 131px;
-height: 48px;
-color:white;
-
+  padding: 12px 24px;
+  width: 131px;
+  height: 48px;
+  color: white;
 }
-.loginUsername{
+.loginUsername {
   border-radius: 6px;
 }
-#loginForm{
+#loginForm {
   display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex-direction: column;
+  gap: 20px;
 }
-#signupForm{
+#signupForm {
   display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex-direction: column;
+  gap: 20px;
 }
+

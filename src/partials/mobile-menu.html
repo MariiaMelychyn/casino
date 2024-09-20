@@ -1,0 +1,8 @@
+// Знаходимо кнопку меню і саму навігацію
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+
+// Додаємо подію на кнопку для відкриття/закриття меню
+menuToggle.addEventListener('click', function () {
+  navMenu.classList.toggle('open'); // Відкриття/закриття меню
+});
