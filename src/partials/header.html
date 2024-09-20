@@ -5,6 +5,7 @@
         <img src="images/logo.png" alt="Logo" class="banner__logo-image" />
       </a>
     </div>
+
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item">
@@ -28,6 +29,7 @@
         </li>
       </ul>
     </nav>
+
     <div class="header__actions">
       <div class="header__lang">
         <select class="header__lang-select">
@@ -47,7 +49,6 @@
         id="openLoginForm"
         >Log In</a
       >
-      <!-- Кнопка Log Out, яка з'явиться після реєстрації -->
       <a
         href="#"
         class="header__button header__button--logout"
@@ -56,13 +57,32 @@
         >Log Out</a
       >
     </div>
+
+    <div class="burger" id="burgerMenu">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </div>
   </div>
 </header>
+
+<div id="modalNav" class="modal-nav">
+  <div class="modal-nav-content">
+    <span class="close-modal" id="closeModalNav">&times;</span>
+    <ul class="modal-nav-list">
+      <li><a href="bonus.html">Bonuses</a></li>
+      <li><a href="app.html">App</a></li>
+      <li><a href="#">Live</a></li>
+      <li><a href="#">Sports</a></li>
+      <li><a href="#">More</a></li>
+    </ul>
+  </div>
+</div>
 
 <div id="signupModal" class="modal">
   <div class="modal-content">
     <span class="close" id="closeSignupForm">&times;</span>
-    <h2 class="close_title">Sign Up</h2>
+    <h2>Sign Up</h2>
     <form id="signupForm">
       <label for="signupUsername">Username:</label>
       <input type="text" id="signupUsername" name="username" required />
@@ -76,7 +96,7 @@
 <div id="loginModal" class="modal">
   <div class="modal-content modal-content-in">
     <span class="close" id="closeLoginForm">&times;</span>
-    <h2 class="close_title">Log In</h2>
+    <h2>Log In</h2>
     <form id="loginForm">
       <label for="loginUsername">Username:</label>
       <input type="text" id="loginUsername" name="username" required />

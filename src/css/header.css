@@ -130,7 +130,6 @@
   background-image: url('../images/header/iPhone.png');
 }
 
-
 .modal {
   display: none;
   position: fixed;
@@ -149,7 +148,7 @@
   border-radius: 8px;
   width: 300px;
 }
-.modal-content-in{
+.modal-content-in {
   background-color: #0fa810;
   margin: 15% auto;
   padding: 20px;
@@ -163,38 +162,111 @@
   font-weight: bold;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-.close_title{
+.close_title {
   font-weight: 600;
-font-size: 16px;
-line-height: 1.28;
-text-transform: uppercase;
-color: #fcfcfc;
-margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 30px;
 }
-.submit{
+.submit {
   background: #1a3769;
   border-radius: 16px;
-padding: 12px 24px;
-width: 131px;
-height: 48px;
-color:white;
-
+  padding: 12px 24px;
+  width: 131px;
+  height: 48px;
+  color: white;
 }
-.loginUsername{
+.loginUsername {
   border-radius: 6px;
 }
-#loginForm{
+#loginForm {
   display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex-direction: column;
+  gap: 20px;
 }
-#signupForm{
+#signupForm {
   display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .header__nav {
+    display: none;
+  }
+}
+
+.modal-nav {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-nav-content {
+  background-color: #223e50;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-nav-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.modal-nav-list li {
+  margin-bottom: 20px;
+}
+
+.modal-nav-list li:last-child {
+  margin-bottom: 0;
+}
+
+.modal-nav-list a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.close-modal {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
