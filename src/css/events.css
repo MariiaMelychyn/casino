@@ -37,3 +37,10 @@
   width: 20px;
   height: 20px;
 }
+.live-events__label{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+text-align: justify;
+color: #fcfcfc;
+}

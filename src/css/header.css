@@ -35,10 +35,12 @@
 }
 
 .header__nav-link {
-  color: white;
-  text-decoration: none;
+  font-weight: 600;
   font-size: 16px;
-  padding: 8px 16px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  padding: 14px 58px;
   background-color: #223e50;
   border-radius: 8px;
 }
@@ -51,14 +53,22 @@
   display: flex;
   align-items: center;
 }
+.banner__logo-image {
+  width: 120px;
+  height: 55px;
+}
 
 .header__lang-select {
   background-color: #223e50;
-  color: white;
   border: none;
   padding: 8px 16px;
   margin-right: 16px;
   border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .header__button {
@@ -66,6 +76,11 @@
   border-radius: 8px;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: #fcfcfc;
 }
 
 .header__button--signup {
@@ -91,4 +106,26 @@
   .header__nav {
     display: block;
   }
+}
+
+.header__nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.icon-bonus {
+  background-image: url('../images/header/Gift.png');
+}
+
+.icon-app {
+  background-image: url('../images/header/iPhone.png');
 }

@@ -5,11 +5,11 @@
 }
 
 .sidebar {
-  width: 250px;
-  background-color: #003366;
-  padding: 20px;
-  color: white;
-  height: calc(100vh - 20px);
+  border-radius: 0 0 6px 6px;
+  width: 295px;
+  height: 400px;
+  padding: 24px 12px;
+  background: #fff;
 }
 
 .sidebar__title {
@@ -23,20 +23,24 @@
 }
 
 .sidebar__list-item {
-  margin: 10px 0;
+  margin-bottom: 5px;
 }
 
 .sidebar__list-link {
-  font-size: 16px;
-  color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #7c7c7c;
 }
 
 .sidebar__list-link:hover {
   background-color: #004080;
   padding-left: 10px;
+  color: #ffffff;
   transition: all 0.3s ease;
 }
 
