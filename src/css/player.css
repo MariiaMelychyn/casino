@@ -113,13 +113,16 @@
   .player-reviews__item {
     flex: 1 0 100%;
   }
-  .player-reviews__item-details{
+  .player-reviews__item-details {
     margin-left: 0;
   }
 }
 @media (min-width: 768px) {
   .player-reviews__item-content {
     flex-direction: row;
+  }
+  .player-reviews {
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {

@@ -63,3 +63,9 @@
     height: auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 249px;
+    margin-top: -20px;
+  }
+}

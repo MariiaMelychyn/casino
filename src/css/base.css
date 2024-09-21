@@ -35,8 +35,6 @@ body {
   }
 }
 
-
-
 @media screen and (min-width: 320px) {
   .container-footer {
     width: 320px;
@@ -51,10 +49,24 @@ body {
     padding-left: 32px;
     padding-right: 32px;
   }
+  .block {
+    display: flex;
+    align-items: center;
+  }
+  .hero-clock {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .container-footer {
     width: 1024px;
+  }
+  .casino-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }

@@ -25,11 +25,10 @@
   text-align: center;
 }
 
-/* Планшетна версія */
 @media (min-width: 768px) {
   .text-block-section {
     padding: 28px 18px;
-    width: 90%;
+    width: 100%;
   }
 
   .text-block-section__title {

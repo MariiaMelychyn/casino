@@ -65,10 +65,7 @@
 @media (min-width: 768px) {
   .casino {
     width: 295px;
+    margin: 0 auto;
   }
 }
-@media (max-width: 768px) {
-  .casino__games {
-    grid-template-columns: 1fr;
-  }
-}
+

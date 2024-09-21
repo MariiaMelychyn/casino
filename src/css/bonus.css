@@ -51,7 +51,7 @@
 @media (min-width: 768px) {
   .bonus-section {
     padding: 80px 20px;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .bonus-section__title {

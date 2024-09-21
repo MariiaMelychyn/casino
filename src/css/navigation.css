@@ -37,7 +37,7 @@
 @media (min-width: 768px) {
   .section {
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
   }
 
   .section__item {

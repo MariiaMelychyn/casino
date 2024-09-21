@@ -76,7 +76,7 @@
 @media (min-width: 768px) {
   .sportsbook {
     padding: 30px;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .sportsbook__title {

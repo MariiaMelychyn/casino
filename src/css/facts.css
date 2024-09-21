@@ -84,7 +84,7 @@
 
 @media (min-width: 768px) {
   .quick-facts {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 @media (min-width: 1024px) {
