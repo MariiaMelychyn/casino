@@ -8,7 +8,8 @@
   align-items: flex-start;
   color: white;
   text-align: center;
-  /* max-width: 1240px; */
+  border-radius: 6px;
+  width: 925px;
   padding: 0 0 0 20px;
 }
 
