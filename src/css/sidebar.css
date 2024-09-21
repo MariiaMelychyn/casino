@@ -47,14 +47,19 @@
 .sidebar__list-icon {
   margin-right: 8px;
 }
-
+@media screen and (max-width: 428px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   .layout {
     flex-direction: column;
   }
 
   .sidebar {
-    width: 100%;
+    width: 295px;
     height: auto;
   }
 }

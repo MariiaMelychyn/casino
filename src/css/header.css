@@ -6,12 +6,19 @@
 .header__container {
   display: flex;
   align-items: center;
+  width: 1003px;
   justify-content: space-between;
+}
+.header__nav {
+  margin-right: 50px;
 }
 
 .header__logo {
   color: white;
+  background: #141e55;
+  padding: 14.5px 32px;
   font-size: 24px;
+  margin-right: 28px;
   font-weight: bold;
 }
 
@@ -40,7 +47,7 @@
   line-height: 1.28;
   text-transform: uppercase;
   color: #fcfcfc;
-  padding: 14px 58px;
+  padding: 14px 22px;
   background-color: #223e50;
   border-radius: 8px;
 }
@@ -61,7 +68,6 @@
 .header__lang-select {
   background-color: #223e50;
   border: none;
-  padding: 8px 16px;
   margin-right: 16px;
   border-radius: 8px;
   font-weight: 600;
@@ -69,18 +75,24 @@
   line-height: 1.28;
   text-transform: uppercase;
   color: #fff;
+width: 62px;
 }
 
 .header__button {
-  padding: 8px 16px;
-  border-radius: 8px;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  font-size: 16px;
   line-height: 1.28;
   text-transform: uppercase;
   color: #fcfcfc;
+  border-radius: 16px;
+  padding: 13px 20px; 
+  width: auto; 
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  white-space: nowrap; 
 }
 
 .header__button--signup {
@@ -269,4 +281,25 @@
   top: 20px;
   right: 20px;
   cursor: pointer;
+}
+.header__lang {
+  display: flex;
+  align-items: center;
+  background-color: #223e50;
+  flex-direction: row-reverse;
+  border-radius: 16px;
+  padding: 12px 24px;
+  display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.header__lang-select {
+  margin-right: 10px; /* Відступ між селектором і зображенням */
+}
+
+.flag-container img {
+  width: 20px;
+  height: 15px;
 }

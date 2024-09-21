@@ -1,24 +1,25 @@
 .sportsbook {
   background-color: #fff;
-  padding: 32px 20px 32px 20px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 925px;
-  margin: 20px 0;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
 .sportsbook__title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 1.8rem;
   line-height: 1.2;
   text-transform: uppercase;
   color: #192a32;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .sportsbook__subtitle {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 1.4rem;
   line-height: 1.2;
   text-transform: uppercase;
   color: #192a32;
@@ -27,18 +28,23 @@
 
 .sportsbook__description {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #192a32;
   margin-bottom: 20px;
+  text-align: justify;
 }
-.sportsbook__list-itemnum {
-  margin: 10px 0;
-}
+
 .sportsbook__list {
   list-style: disc inside;
-  padding-left: 20px;
   margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.sportsbook__list-itemnum {
+  margin-top: 10px;
+  list-style-type: decimal;
+  padding-left: 20px;
 }
 
 .sportsbook__list-item {
@@ -52,25 +58,14 @@
   display: inline-block;
   background-color: #ff6600;
   color: #fff;
-  font-size: 1rem;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 12px 32px;
   border: none;
-  border-radius: 5px;
-  text-transform: uppercase;
+  border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.28;
+  box-shadow: 0 4px 18px rgba(14, 24, 17, 0.25);
   text-transform: uppercase;
-  color: #fff;
-  border-radius: 16px;
-  padding: 12px 32px;
-  width: 127px;
-  height: 48px;
-  box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
-  background: #ec622b;
   margin-top: 32px;
 }
 
@@ -78,26 +73,49 @@
   background-color: #e65c00;
 }
 
-/* Адаптивність */
-@media (max-width: 600px) {
+@media (min-width: 768px) {
   .sportsbook {
-    padding: 20px;
+    padding: 30px;
+    max-width: 90%;
   }
 
   .sportsbook__title {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 
   .sportsbook__subtitle {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .sportsbook__description {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .sportsbook__cta {
-    width: 100%;
+    width: 200px;
     text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sportsbook {
+    max-width: 925px;
+    padding: 40px;
+  }
+
+  .sportsbook__title {
+    font-size: 3rem;
+  }
+
+  .sportsbook__subtitle {
+    font-size: 2.2rem;
+  }
+
+  .sportsbook__description {
+    font-size: 1.2rem;
+  }
+
+  .sportsbook__cta {
+    width: 250px;
   }
 }

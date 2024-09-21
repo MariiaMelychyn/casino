@@ -4,7 +4,7 @@
   margin-top: 20px;
   border-radius: 6px;
   padding: 20px;
-  width: 925px;
+  width: 100%;
   background: #fff;
   position: relative;
   background: url(/images/support.png) no-repeat center center / cover;
@@ -17,7 +17,7 @@
   margin-bottom: 15px;
   text-align: center;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #192a32;
@@ -76,8 +76,6 @@
   font-size: 16px;
   line-height: 1.5;
   color: #192a32;
-  display: flex;
-  align-items: center;
   gap: 16px;
 }
 .email {
@@ -96,7 +94,14 @@
 
   .player-reviews__item {
     width: 100%;
+    height: 100%;
+    text-align: left;
     margin-bottom: 10px;
+  }
+  .player-reviews__item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .customer-support__contact-options {
@@ -141,4 +146,48 @@
 
 .customer-support__info-item span {
   max-width: 484px;
+}
+
+@media (min-width: 768px) {
+  .customer-support {
+    padding: 30px;
+    width: 90%;
+  }
+
+  .customer-support__title {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .customer-support__option {
+    width: 200px;
+  }
+
+  .customer-support__info-item {
+    flex-direction: row;
+  }
+  .customer-support__info-item {
+    display: flex;
+    align-items: center;
+  }
+  .customer-support__contact-options {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .customer-support {
+    width: 925px;
+    padding: 32px;
+  }
+
+  .customer-support__title {
+    font-size: 48px;
+  }
+
+  .customer-support__option {
+    width: 250px;
+  }
 }

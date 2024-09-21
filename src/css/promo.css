@@ -1,52 +1,47 @@
 .promo {
   background-color: #f7f7f7;
-  padding: 16px 0;
+  padding: 12px 0;
   border-radius: 6px;
-  width: 925px;
-  height: 98px;
-  margin: 20px 0;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
 }
 
 .promo__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .promo__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: #192a32;
-  margin-right: 20px;
-  max-width: 666px;
+  margin-bottom: 12px;
+  max-width: 100%;
 }
 
 .promo__button {
   display: flex;
   align-items: center;
+  justify-content: center;
   background: #1a3769;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
-  text-align: justify;
   color: #fff;
-  transition: background-color 0.3s ease;
   border-radius: 16px;
-  padding: 12px;
-  width: 179px;
-  height: 48px;
-}
-
-.promo__button:hover {
-  background-color: #0056b3;
+  padding: 10px;
+  width: 160px;
+  height: 44px;
 }
 
 .promo__icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
+  width: 14px;
+  height: 14px;
 }
 
 .promo__icon--app {
@@ -60,18 +55,46 @@
   margin-left: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .promo {
+    padding: 16px 5px;
+    height: auto;
+  }
+
   .promo__content {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
   }
 
   .promo__text {
-    margin-bottom: 12px;
-    max-width: 100%;
+    font-size: 16px;
+    margin-right: 20px;
+    max-width: 666px;
   }
 
   .promo__button {
-    justify-content: center;
+    width: 300px;
+    height: 48px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .promo {
+    width: 925px;
+    height: 98px;
+    margin: 20px 0;
+    padding: 25px 20px;
+  }
+
+  .promo__text {
+    margin-right: 20px;
+    max-width: 666px;
+  }
+
+  .promo__button {
+    width: 179px;
+    height: 48px;
+    font-size: 16px;
   }
 }

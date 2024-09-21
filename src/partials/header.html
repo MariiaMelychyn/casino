@@ -1,12 +1,10 @@
 <header class="header">
-  <div class="container header__container">
+  <div class="header__container">
     <div class="header__logo">
-      <a href="/">
-        <img src="images/logo.png" alt="Logo" class="banner__logo-image" />
-      </a>
+      <a href="/"> LOGO </a>
     </div>
 
-    <nav class="header__nav">
+    <nav class="header__nav" aria-label="Main Navigation">
       <ul class="header__nav-list">
         <li class="header__nav-item">
           <a href="bonus.html" class="header__nav-link">
@@ -30,13 +28,19 @@
       </ul>
     </nav>
 
-    <div class="header__actions">
-      <div class="header__lang">
-        <select class="header__lang-select">
-          <option value="at">AT</option>
-          <option value="en">EN</option>
-        </select>
+    <div class="header__lang ">
+      <label for="lang-select" class="sr-only">Select Language</label>
+      <select class="header__lang-select" id="lang-select">
+        <option value="at">AT</option>
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="de">DE</option>
+      </select>
+      <div class="flag-container">
+        <img id="flag-img" src="images/lg/auvstralia.png" alt="Austria Flag" style="width: 20px; height: 15px;">
       </div>
+    </div>
+    
       <a
         href="#"
         class="header__button header__button--signup"
@@ -58,11 +62,11 @@
       >
     </div>
 
-    <div class="burger" id="burgerMenu">
+    <button class="burger" id="burgerMenu" aria-label="Open menu">
       <span class="burger-line"></span>
       <span class="burger-line"></span>
       <span class="burger-line"></span>
-    </div>
+    </button>
   </div>
 </header>
 

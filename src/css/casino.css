@@ -3,8 +3,7 @@
   padding: 32px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  width: 295px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .casino__header {
@@ -51,6 +50,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   padding: 0 40px;
+  justify-items: center;
 }
 
 .casino__game {
@@ -62,7 +62,11 @@
   height: auto;
   border-radius: 8px;
 }
-
+@media (min-width: 768px) {
+  .casino {
+    width: 295px;
+  }
+}
 @media (max-width: 768px) {
   .casino__games {
     grid-template-columns: 1fr;

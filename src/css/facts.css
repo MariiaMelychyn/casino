@@ -1,17 +1,15 @@
 .quick-facts {
   background: #fff;
-  padding: 32px 40px 32px 40px;
+  padding: 32px 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
-  border-radius: 6px;
   max-width: 925px;
   margin-bottom: 20px;
 }
 
 .quick-facts__title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #192a32;
@@ -51,14 +49,46 @@
   color: #192a32;
 }
 
+.quick-facts__list-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
 @media (max-width: 600px) {
+  .quick-facts {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .quick-facts__title {
+    font-size: 1.8rem;
+    font-size: 40px;
+    text-align: center;
+  }
+
   .quick-facts__item {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .quick-facts__label {
+    font-size: 1rem;
+  }
+
   .quick-facts__value {
     text-align: left;
     margin-top: 5px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .quick-facts {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  .quick-facts {
+    max-width: 925px;
   }
 }

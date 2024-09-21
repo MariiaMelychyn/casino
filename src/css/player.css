@@ -4,7 +4,7 @@
   padding: 20px;
   text-align: center;
   border-radius: 6px;
-  width: 925px;
+  width: 100%;
   background: #fff;
   display: flex;
   flex-direction: row;
@@ -19,7 +19,7 @@
 .player-reviews__title {
   font-weight: 700;
   text-align: left;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #192a32;
@@ -112,5 +112,24 @@
 @media (max-width: 768px) {
   .player-reviews__item {
     flex: 1 0 100%;
+  }
+  .player-reviews__item-details{
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .player-reviews__item-content {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .player-reviews__title {
+    font-size: 40px;
+  }
+  .player-reviews {
+    width: 925px;
+  }
+  .player-reviews__item-content {
+    flex-direction: row;
   }
 }

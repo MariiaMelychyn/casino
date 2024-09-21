@@ -59,3 +59,68 @@
   text-align: center;
   color: #fff;
 }
+
+/* Адаптація для мобільних пристроїв (max-width: 600px) */
+@media (max-width: 600px) {
+  .rating-section {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .rating-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .rating-item__label {
+    font-size: 14px;
+  }
+
+  .rating-item__stars {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  .rating-item__score {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .rating-item__star {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .rating-section {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .rating-item {
+    padding: 12px 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .rating-item__label {
+    font-size: 15px;
+  }
+
+  .rating-item__stars {
+    font-size: 15px;
+  }
+
+  .rating-item__score {
+    font-size: 13px;
+  }
+
+  .rating-item__star {
+    width: 18px;
+    height: 18px;
+  }
+}

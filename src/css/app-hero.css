@@ -1,10 +1,9 @@
-.app-hero{
-    position: relative;
-    background: url('../images/app-hero.png') no-repeat center center/cover;
-    height: 400px;
-    border-radius: 6px;
-width: 1240px;
-height: 384px;
-margin: 0 auto;
-
+.app-hero {
+  position: relative;
+  background: url('../images/app-hero.png') no-repeat center center/cover;
+  height: 400px;
+  border-radius: 6px;
+  width: 1240px;
+  height: 384px;
+  margin: 0 auto;
 }
