@@ -6,12 +6,16 @@
 
 .sidebar {
   border-radius: 0 0 6px 6px;
-  width: 295px;
-  height: 400px;
-  padding: 24px 12px;
   background: #fff;
+  margin: 20px 0;
+  border-radius: 6px;
+width: 295px;
+/* height: 707px; */
 }
-
+.sidebar__events{
+  padding: 20px 22px;
+  background: #192a32;
+}
 .sidebar__title {
   font-size: 18px;
   font-weight: bold;
@@ -20,10 +24,11 @@
 
 .sidebar__list {
   list-style: none;
+  padding: 32px 12px;
 }
 
 .sidebar__list-item {
-  margin-bottom: 5px;
+  margin-bottom: 16px;
 }
 
 .sidebar__list-link {
@@ -66,6 +71,12 @@
 @media screen and (min-width: 768px) {
   .sidebar {
     width: 249px;
-    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    margin-bottom: 20px;
   }
 }

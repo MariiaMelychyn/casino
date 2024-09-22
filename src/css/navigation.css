@@ -67,9 +67,12 @@
   }
 
   .section__item {
+    display: flex;
     width: 98px;
+    gap: 10px;
     height: 102px;
     background: #f6f6f6;
+    flex-direction: column;
   }
 
   .section__item img {

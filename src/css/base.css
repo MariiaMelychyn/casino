@@ -24,14 +24,14 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    /* padding-left: 32px;
+    padding-right: 32px; */
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1024px;
+    width: 1200px;
   }
 }
 
@@ -41,28 +41,45 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
+  .block-casino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container-footer {
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  .block {
+  
+  .hero-block {
     display: flex;
-    align-items: center;
-  }
-  .hero-clock {
-    display: flex;
-    align-items: center;
+    width: 1003px;
+    align-items: flex-start;
     gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box; 
   }
+  
+  .hero-block > div:first-child {
+    flex-grow: 8; 
+    flex-shrink: 1; 
+  }
+  
+  .hero-block > .block-casino {
+    flex-grow: 2; 
+    flex-shrink: 1; 
+  }
+  
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .container-footer {
-    width: 1024px;
+    width: 1200px;
   }
   .casino-name {
     display: flex;
