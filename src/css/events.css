@@ -51,3 +51,8 @@
   color: #fcfcfc;
   margin-left: 5px;
 }
+@media (min-width: 1024px) {
+  .live-events__label{
+    margin-left: 15px;
+  }
+}

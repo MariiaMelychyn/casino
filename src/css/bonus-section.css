@@ -12,10 +12,10 @@
 
 .bonus-section__title {
   font-weight: 700;
-font-size: 48px;
-line-height: 1.2;
-text-transform: uppercase;
-color: #192a32;
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #192a32;
 }
 
 .bonus-section__text {
@@ -72,7 +72,10 @@ color: #192a32;
   text-transform: uppercase;
   color: #fff;
   border: none;
-  padding: 12px 32px;
+border-radius: 16px;
+padding: 12px 32px;
+width: 127px;
+height: 48px;
 }
 
 .bonus-section__btn:hover {
@@ -81,10 +84,11 @@ color: #192a32;
 
 @media (min-width: 768px) {
   .bonus-section {
-    /* max-width: 768px; */
     margin: 20px auto;
   }
-
+.bonus-section__btn{
+width: 150px;
+}
   .bonus-section__header {
     padding: 30px;
   }
