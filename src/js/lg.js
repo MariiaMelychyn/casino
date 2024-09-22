@@ -509,20 +509,6 @@ function updateContent() {
   document.getElementById('sportsbookListItem4').innerText = i18next.t(
     'sportsbookListItem4'
   );
-  document.getElementById('sportsbookListSubItem1').innerText = i18next.t(
-    'sportsbookListSubItem1'
-  );
-  document.getElementById('sportsbookListSubItem2').innerText = i18next.t(
-    'sportsbookListSubItem2'
-  );
-  document.getElementById('sportsbookListSubItem3').innerText = i18next.t(
-    'sportsbookListSubItem3'
-  );
-  document.getElementById('sportsbookDescription4').innerText = i18next.t(
-    'sportsbookDescription4'
-  );
-  document.getElementById('sportsbookCTA').innerText =
-    i18next.t('sportsbookCTA');
 }
 
 function setFlag(language) {
