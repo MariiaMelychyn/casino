@@ -20,7 +20,7 @@
   font-size: 28px;
   line-height: 1.3;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--bonus-section);
   margin-bottom: 8px;
 }
 
@@ -28,7 +28,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.3;
-  color: #192a32;
+  color: var(--bonus-section);
 }
 
 .bonus-section__button {
@@ -36,11 +36,11 @@
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--app-hero);
   text-decoration: none;
   box-shadow: 0 4px 12px 0 rgba(14, 24, 17, 0.25);
-  background: #ec622b;
-  border: 1px solid #fff;
+  background: var(--bonus-sectionclas);
+  border: 1px solid var(--white);
   border-radius: 16px;
   padding: 10px 20px;
   width: 100%;

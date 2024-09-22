@@ -1,5 +1,5 @@
 .header {
-  background-color: #1e2d39;
+  background-color: var(--header);
   padding: 16px 0;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .header__logo {
-  color: white;
+  color: var(--white);
   background: #141e55;
   padding: 14.5px 32px;
   font-size: 24px;
@@ -50,14 +50,14 @@
   font-size: 16px;
   line-height: 1.28;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--app-hero);
   padding: 14px 22px;
   background-color: #223e50;
   border-radius: 8px;
 }
 
 .header__nav-link:hover {
-  background-color: #2a5067;
+  background-color: var(--header-naw);
 }
 
 .header__actions {
@@ -78,7 +78,7 @@
   font-size: 16px;
   line-height: 1.28;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
   width: 62px;
 }
 
@@ -88,7 +88,7 @@
   font-weight: 600;
   line-height: 1.28;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--app-hero);
   border-radius: 16px;
   padding: 13px 20px;
   width: auto;
@@ -100,25 +100,25 @@
 }
 
 .header__button--signup {
-  background-color: #ff5722;
-  color: white;
+  background-color: var(--signup);
+  color: var(--white);
   margin-right: 16px;
 }
 
 .header__button--signup:hover {
-  background-color: #ff7043;
+  background-color: var(--signup-hover);
 }
 
 .header__button--login {
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--casino);
+  color: var(--white);
 }
 .header__button--logout {
-  background-color: #141e55;
-  color: white;
+  background-color: var(--logout);
+  color: var(--white);
 }
 .header__button--login:hover {
-  background-color: #66bb6a;
+  background-color: var(--login-hover);
 }
 
 @media screen and (min-width: 1024px) {
@@ -161,21 +161,21 @@
 }
 
 .modal-content {
-  background-color: #ec622b;
+  background-color: var(--primary);
   margin: 15% auto;
   padding: 20px;
   border-radius: 8px;
   width: 300px;
 }
 .modal-content-in {
-  background-color: #0fa810;
+  background-color: var(--contant);
   margin: 15% auto;
   padding: 20px;
   border-radius: 8px;
   width: 300px;
 }
 .close {
-  color: #aaa;
+  color: var(--close);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -192,16 +192,16 @@
   font-size: 16px;
   line-height: 1.28;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--app-hero);
   margin-bottom: 30px;
 }
 .submit {
-  background: #1a3769;
+  background: var(--submit);
   border-radius: 16px;
   padding: 12px 24px;
   width: 131px;
   height: 48px;
-  color: white;
+  color: var(--white);
 }
 .loginUsername {
   border-radius: 6px;
@@ -230,12 +230,12 @@
 .burger-line {
   width: 100%;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 @media screen and (max-width: 1024px) {
   .burger {
     display: flex;
-    background: #141e55;
+    background: var(--logout);
     border: none;
     display: flex;
   }
@@ -265,7 +265,7 @@
 }
 
 .modal-nav-content {
-  background-color: #223e50;
+  background-color: var(--header-lang);
   padding: 40px;
   border-radius: 8px;
   width: 100vw;

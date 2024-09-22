@@ -34,9 +34,9 @@
 }
 
 .banner__button {
-  background-color: #ff6a00;
+  background-color: var(--bg-app);
   border: none;
-  color: white;
+  color: var(--white);
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -46,7 +46,7 @@
 }
 
 .banner__button:hover {
-  background-color: #ff5000;
+  background-color: var(--bg-hover);
 }
 
 .banner__store-links {
@@ -71,14 +71,14 @@
   font-size: 20px;
   line-height: 1.28;
   text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--white);
+  border: 1px solid var(--white);
   border-radius: 16px;
   padding: 12px 32px;
   width: 267px;
   height: 60px;
   box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
-  background: #ec622b;
+  background: var(--primary);
   white-space: nowrap;
 }
 

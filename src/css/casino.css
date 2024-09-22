@@ -34,15 +34,15 @@
 }
 
 .casino__auth-button--login {
-  color: #4caf50;
+  color: var(--casino);
 }
 
 .casino__auth-button--signup {
-  color: #f44336;
+  color: var(--casino-auth);
 }
 
 .casino__auth-button:hover {
-  background-color: #ddd;
+  background-color: var(--casino-hover);
 }
 
 .casino__games {

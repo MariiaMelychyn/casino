@@ -1,5 +1,5 @@
 .quick-facts {
-  background: #fff;
+  background: var(--white);
   padding: 32px 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,7 +12,7 @@
   font-size: 36px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--bonus-section);
   margin-bottom: 20px;
   text-align: left;
 }
@@ -36,7 +36,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-transform: capitalize;
-  color: #192a32;
+  color: var(--bonus-section);
   flex: 1;
 }
 
@@ -46,7 +46,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #192a32;
+  color: var(--bonus-section);
 }
 
 .quick-facts__list-icon {

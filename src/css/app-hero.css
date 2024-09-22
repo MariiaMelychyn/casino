@@ -19,7 +19,7 @@
 
 .app-hero__content {
   z-index: 2;
-  color: #fff;
+  color: var(--white);
 }
 
 .app-hero__title {
@@ -27,7 +27,7 @@
   font-size: 24px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
 }
 
 .app-hero__button {
@@ -35,27 +35,27 @@
   font-size: 16px;
   line-height: 1.28;
   text-transform: uppercase;
-  color: #fcfcfc;
-  border: 1px solid #fff;
+  color: var(--app-hero);
+  border: 1px solid var(--white);
   border-radius: 16px;
   padding: 12px 32px;
   width: 214px;
   height: 48px;
   box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
-  background: #ec622b;
+  background: var(--primary);
   margin: 15px 0;
   transition: background-color 0.3s ease;
 }
 
 .app-hero__button:hover {
-  background-color: #ff5000;
+  background-color: var(--app-herobt);
 }
 
 .app-hero__terms {
   font-weight: 400;
   font-size: 6px;
   line-height: 1.5;
-  color: #fff;
+  color: var(--white);
   padding-left: 20px;
 }
 

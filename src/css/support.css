@@ -1,11 +1,11 @@
 .customer-support {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 20px;
   margin-top: 20px;
   border-radius: 6px;
   padding: 20px;
   width: 100%;
-  background: #fff;
+  background: var(--white);
   position: relative;
   background: url(/images/support.png) no-repeat center center / cover;
 }
@@ -20,14 +20,14 @@
   font-size: 36px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--protsbok);
   text-align: left;
 }
 .customer-support__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #192a32;
+  color: var(--protsbok);
 }
 
 .customer-support__contact-options {
@@ -40,7 +40,7 @@
 .customer-support__option {
   margin: 10px;
   padding: 10px;
-  background-color: #eaeaea;
+  background-color: var(--faq);
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@
   font-size: 16px;
   line-height: 1.28;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--protsbok);
 }
 
 .customer-support__icon {
@@ -69,13 +69,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #192a32;
+  color: var(--customer);
   border-bottom: 1px solid #192a32;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #192a32;
+  color: var(--customer);
   gap: 16px;
 }
 .email {
@@ -84,7 +84,7 @@
   line-height: 1.5;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #2e9344;
+  color: var(--email);
 }
 @media (max-width: 768px) {
   .player-reviews__items {

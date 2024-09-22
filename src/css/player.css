@@ -5,7 +5,7 @@
   text-align: center;
   border-radius: 6px;
   width: 100%;
-  background: #fff;
+  background: var(--white);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -22,7 +22,7 @@
   font-size: 36px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--bonus-section);
 }
 
 .player-reviews__slider {
@@ -43,12 +43,12 @@
   border-radius: 6px;
   width: 433px;
   height: 177px;
-  background: #e2eaf7;
+  background: var(--player);
   margin-right: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #192a32;
+  color: var(--bonus-section);
   display: flex;
   align-items: center;
 }
@@ -58,27 +58,27 @@
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--player-name);
 }
 .player-reviews__prev,
 .player-reviews__next {
   top: 50%;
   transform: translateY(-50%);
-  background: #e2eaf7;
-  color: white;
+  background: var(--player);
+  color: var(--white);
   border: none;
   padding: 10px;
   cursor: pointer;
   z-index: 10;
   border-radius: 100px;
-  fill: #e2eaf7;
+  fill: var(--player);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .star {
   position: relative;
   display: inline-block;
-  color: #000;
+  color: var(--black);
 }
 
 .star::before {

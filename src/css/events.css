@@ -1,10 +1,10 @@
 .live-events {
   display: inline-flex;
   align-items: center;
-  background-color: #ff4d00;
+  background-color: var(--live);
   border-radius: 20px;
   font-family: Arial, sans-serif;
-  color: white;
+  color: var(--white);
   font-size: 16px;
   font-weight: bold;
   margin: 0 auto;
@@ -48,7 +48,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
-  color: #fcfcfc;
+  color: var(--app-hero);
   margin-left: 5px;
 }
 @media (min-width: 1024px) {

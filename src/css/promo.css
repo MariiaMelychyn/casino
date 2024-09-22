@@ -1,5 +1,5 @@
 .promo {
-  background-color: #f7f7f7;
+  background-color: var(--promo);
   padding: 12px 0;
   border-radius: 6px;
   width: 100%;
@@ -18,7 +18,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #192a32;
+  color: var(--player-name);
   margin-bottom: 12px;
   max-width: 100%;
 }
@@ -27,12 +27,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1a3769;
+  background: var(--submit);
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
   border-radius: 16px;
   padding: 10px;
   width: 160px;
@@ -84,10 +84,10 @@
     display: inline-flex;
     align-items: center;
     padding: 1px;
-    background-color: #ff4d00;
+    background-color: var(--live);
     border-radius: 20px;
     font-family: Arial, sans-serif;
-    color: white;
+    color: var(--white);
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -105,7 +105,7 @@
     font-size: 12px;
     line-height: 1.5;
     text-align: justify;
-    color: #fcfcfc;
+    color: var(--app-hero);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -141,7 +141,7 @@
     padding: 1px;
     border-radius: 20px;
     font-family: Arial, sans-serif;
-    color: white;
+    color: var(--white);
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 20px;

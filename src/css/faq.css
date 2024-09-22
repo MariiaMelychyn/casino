@@ -1,5 +1,5 @@
 .faq {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 20px;
   margin-top: 20px;
   border-radius: 6px;
@@ -13,11 +13,11 @@
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--bonus-section);
 }
 
 .faq__question {
-  background-color: #eaeaea;
+  background-color: var(--faq);
   padding: 15px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -26,19 +26,19 @@
   font-size: 16px;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--bonus-section);
 }
 
 .faq__answer {
   display: none;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: var(--faq-answer);
   margin-bottom: 10px;
   border-radius: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #192a32;
+  color: var(--bonus-section);
   opacity: 0.9;
 }
 

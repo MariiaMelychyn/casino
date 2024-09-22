@@ -1,5 +1,5 @@
 .sportsbook {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,7 +12,7 @@
   font-size: 1.8rem;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--player-name);
   margin-bottom: 20px;
   text-align: left;
 }
@@ -22,7 +22,7 @@
   font-size: 1.4rem;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #192a32;
+  color: var(--player-name);
   margin: 20px 0 10px;
 }
 
@@ -30,7 +30,7 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
-  color: #192a32;
+  color: var(--protsbok);
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -50,14 +50,14 @@
 .sportsbook__list-item {
   font-size: 1rem;
   line-height: 1.6;
-  color: #666;
+  color: var(--prots-list);
   margin-bottom: 10px;
 }
 
 .sportsbook__cta {
   display: inline-block;
-  background-color: #ff6600;
-  color: #fff;
+  background-color: var(--bonus-sectionbtn);
+  color: var(--white);
   font-weight: bold;
   padding: 12px 32px;
   border: none;

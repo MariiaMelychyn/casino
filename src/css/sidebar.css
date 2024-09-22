@@ -6,14 +6,14 @@
 
 .sidebar {
   border-radius: 0 0 6px 6px;
-  background: #fff;
+  background: var(--white);
   margin: 20px 0;
   border-radius: 6px;
   width: 295px;
 }
 .sidebar__events {
   padding: 20px 22px;
-  background: #192a32;
+  background: var(--player-name);
 }
 .sidebar__title {
   font-size: 18px;
@@ -38,13 +38,13 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
-  color: #7c7c7c;
+  color: var(--sidebar);
 }
 
 .sidebar__list-link:hover {
-  background-color: #004080;
+  background-color: var(--sidebar-list);
   padding-left: 10px;
-  color: #ffffff;
+  color: var(--white);
   transition: all 0.3s ease;
 }
 

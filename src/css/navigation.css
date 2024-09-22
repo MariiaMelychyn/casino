@@ -6,7 +6,7 @@
   border-radius: 6px;
   padding: 20px 10px;
   width: 100%;
-  background: #fff;
+  background: var(--white);
 }
 
 .section__item {
@@ -16,8 +16,7 @@
   border-radius: 6px;
   width: 80px;
   height: auto;
-  /* margin: 10px 0; */
-  background: #f6f6f6;
+  background: var(--item);
   padding: 10px 15px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
@@ -32,7 +31,7 @@
   font-weight: 600;
   font-size: 12px;
   text-align: center;
-  color: #192a32;
+  color: var(--bonus-section);
 }
 
 @media (min-width: 768px) {
@@ -67,7 +66,7 @@
     padding: 28px 10px;
     width: 925px;
     height: 166px;
-    background: #fff;
+    background: var(--white);
   }
 
   .section__item {
@@ -75,7 +74,7 @@
     width: 98px;
     gap: 10px;
     height: 102px;
-    background: #f6f6f6;
+    background: var(--item);
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
     margin: 10px 0;
@@ -91,7 +90,7 @@
   }
 
   .section__item:hover {
-    background: #fff;
+    background: var(--white);
     border-radius: 6px;
     padding: 32px 20px;
     height: 166px;

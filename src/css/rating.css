@@ -6,7 +6,7 @@
   border-radius: 6px;
   padding: 32px 20px;
   width: 925px;
-  background: #fff;
+  background: var(--white);
   margin: 20px 0;
 }
 
@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #80bef8;
+  background: var(--rating);
   border-radius: 6px;
   padding: 16px 24px;
   width: 885px;
@@ -37,7 +37,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
 }
 
 .rating-item__star {
@@ -57,7 +57,7 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--white);
 }
 
 @media (max-width: 600px) {
