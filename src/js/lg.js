@@ -1,3 +1,8 @@
+import australiaFlag from '../images/lg/auvstralia.png';
+import usFlag from '../images/lg/us.png';
+import franceFlag from '../images/lg/france.png';
+import germanyFlag from '../images/lg/germany.png';
+
 const resources = {
   en: {
     translation: {
@@ -512,26 +517,26 @@ function updateContent() {
 }
 
 function setFlag(language) {
-  const flagImg = document.getElementById('flag-img');
-  switch (language) {
-    case 'at':
-      flagImg.src = '../images/lg/auvstralia.png';
-      flagImg.alt = 'Austria Flag';
-      break;
-    case 'en':
-      flagImg.src = '../images/lg/us.png';
-      flagImg.alt = 'England Flag';
-      break;
-    case 'fr':
-      flagImg.src = '../images/lg/france.png';
-      flagImg.alt = 'France Flag';
-      break;
-    case 'de':
-      flagImg.src = '../images/lg/germany.png';
-      flagImg.alt = 'Germany Flag';
-      break;
+    const flagImg = document.getElementById('flag-img');
+    switch (language) {
+      case 'at':
+        flagImg.src = australiaFlag;
+        flagImg.alt = 'Austria Flag';
+        break;
+      case 'en':
+        flagImg.src = usFlag;
+        flagImg.alt = 'England Flag';
+        break;
+      case 'fr':
+        flagImg.src = franceFlag;
+        flagImg.alt = 'France Flag';
+        break;
+      case 'de':
+        flagImg.src = germanyFlag;
+        flagImg.alt = 'Germany Flag';
+        break;
+    }
   }
-}
 
 document.getElementById('lang-select').addEventListener('change', function () {
   const selectedLang = this.value;
