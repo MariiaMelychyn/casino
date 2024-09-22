@@ -19,7 +19,7 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script type="module" crossorigin src="/casino/assets/main-Cb6j6qU4.js"></script>
+    <script type="module" crossorigin src="/casino/assets/main-BYXMLCDf.js"></script>
     <link rel="stylesheet" crossorigin href="/casino/assets/main-CJIXsO6U.css">
   </head>
   <body>
@@ -646,7 +646,7 @@
         <div class="block-casino">
           <aside class="sidebar">
   <div class="sidebar__events">
-    <div class="live-events">
+    <div class="live-events" id="liveEventsButton">
       <span class="live-events__icon">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMCSURBVHgBzZnPitNQFMZP0rRaZ9PZ6NIWtyLjE5gKgpvB6c6FoCLoQpApgiuh4xNMXQhuZPoGCi4FJz6B9QkmLnXTDOgU+9fvi0mcdtI/SW/S/OBObm+Syddz7jk591aTmPT7fXM8Hm/pun5D07Qt9EsYLnmnHYzZGGP7hs9WPp+3JGkoYjgcNgaDQQdtHLEdoR10u92yqMYTth9D1Ky2tFBt0QW9Xm8XbmzIf/epwh6NRq8KhUJr3kVzBdJqsN6uJAjmajOXy9Vnng8b9Fz6Hl1TUgAi2/BSFUfnzLmwGyDuKyNU0sUyDKM6PahPD3huTVscMfns6cEJCyK6HuBwIGsEgVNH4DT9z4FAWK2Mk4c8ynpxEDQVfz4GLoZ59zIgjpRgqIb/wbUghUHgkWQIWHGTVnQtSOtJxkA8uPnXtSCtF8e9vx/fF+PqNSncvSfaxUuiGAdpZ1NjVQJTHkoMfu3cDvr57R0pbNeUCoXRqnSxKQrof/wg3Zcv3KMq3HIOR2VJefTzh/x591ZO4PrB50+yKvCsqa3yWjvt4jB0uJvz07h5S2Jiayw+JWYptUigTw6BdP7Z8zjz06HAscRkWYE+eVgyasTrkiJ9zMuT+tNI91CgIylBV1/YfxPlFsfAn2NRX85PkPOSOY9R4MrQQAS30bksCaBXrsi5R08iC/NB0fCdAi0IvCMKUZBefNoG1wOiCG1jA6+8mtvYV4BlcMWPVMNAiT0PExBGbGpjkPCd9xqWbET9D8xnCVYzlvsMkWCZ2ZEMgSqrUiwWbTdRs3KlFSU7tCiOndOLppJX9ieaE5fAhvWqvsDgVUcrcq9E1gw1+OLIxLuY69F1uprPnt5MCt36QNrhEsCUFGE+xkru+vR4aDWDC2sqE/giYLkv3DwKOxcqkPOR3yYNd/MZSMhm2M4WmVsP4kauTR+yqhD1MCjr3jNWg2tmzMuWqi1gpJGmt+muFl8o82UMYR0I24sqbOEe9Sy44Jd/kc4VYdmrKYOfIdCOWWt65Vw77s8QfwGGLmYNjJd8EQAAAABJRU5ErkJggg==" alt="Live Events Icon" />
       </span>
@@ -657,6 +657,9 @@
       </span>
     </div>
   </div>
+<audio id="click-sound" preload="auto">
+  <source src="https://www.soundjay.com/sports/sounds/sports-crowd-cheering-1.mp3" type="audio/mpeg">
+</audio>
   <ul class="sidebar__list">
     <li class="sidebar__list-item">
       <a href="#" class="sidebar__list-link">
@@ -823,7 +826,6 @@
     </div>
   </div>
 </footer>
-
 
   </body>
 </html>
