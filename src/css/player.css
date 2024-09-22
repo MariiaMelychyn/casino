@@ -126,13 +126,13 @@
   }
 }
 @media (max-width: 1024px) {
-  .player-reviews__title{
+  .player-reviews__title {
     font-size: 1.8rem;
   }
-  .player-reviews__prev{
-    margin-top:20px;
+  .player-reviews__prev {
+    margin-top: 20px;
   }
-  .player-reviews__item-content{
+  .player-reviews__item-content {
     margin: 0 auto;
   }
 }

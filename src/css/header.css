@@ -236,12 +236,11 @@
   .burger {
     display: flex;
     background: #141e55;
- 
     border: none;
     display: flex;
-  }}
+  }
+}
 @media screen and (max-width: 768px) {
-
   .header__nav {
     display: none;
   }
@@ -418,22 +417,22 @@
     padding: 14.5px 32px;
     margin-right: 5px;
   }
-  .header__lang{
-padding: 12px 24px;
+  .header__lang {
+    padding: 12px 24px;
   }
-  .header__button--signup{
+  .header__button--signup {
     padding: 14px 32px;
   }
-  .header__nav-item{
+  .header__nav-item {
     margin-right: 21px;
   }
-  .header__logo{
+  .header__logo {
     margin-right: 21px;
   }
-   .header__button--signup {
+  .header__button--signup {
     margin-right: 21px;
   }
-  .header__nav-link{
+  .header__nav-link {
     padding: 16.5px 22px;
   }
 }

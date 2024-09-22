@@ -29,12 +29,12 @@
     font-size: 1.8rem;
     text-align: left;
   }
-.text-block-section__description{
-  text-align: left;
-}
-.promo__text{
-  text-align: left;
-}
+  .text-block-section__description {
+    text-align: left;
+  }
+  .promo__text {
+    text-align: left;
+  }
 }
 @media (min-width: 768px) {
   .text-block-section {

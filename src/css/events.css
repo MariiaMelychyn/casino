@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding: 1px;
   white-space: nowrap;
-  width:100%;
+  width: 100%;
 }
 
 .live-events__icon {
@@ -18,16 +18,16 @@
 }
 
 .live-events__icon img {
-  width: 40px; 
+  width: 40px;
   height: 40px;
-  object-fit: contain; 
-  max-width: none; 
+  object-fit: contain;
+  max-width: none;
   max-height: none;
 }
 
 .live-events__label {
   margin-right: 5px;
-  margin-left:15px;
+  margin-left: 15px;
 }
 
 .live-events__count {
@@ -43,11 +43,11 @@
   width: 20px;
   height: 20px;
 }
-.live-events__label{
+.live-events__label {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-text-align: justify;
-color: #fcfcfc;
-margin-left: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #fcfcfc;
+  margin-left: 5px;
 }

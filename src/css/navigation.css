@@ -20,8 +20,7 @@
   background: #f6f6f6;
   padding: 10px 15px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Основна м'яка тінь */
-              0 2px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .section__item img {
@@ -54,9 +53,9 @@
     width: 45px;
     height: 45px;
   }
-  .section__item{
+  .section__item {
     margin: 5px 0;
-  } 
+  }
 }
 
 @media (min-width: 1024px) {
@@ -78,9 +77,8 @@
     height: 102px;
     background: #f6f6f6;
     flex-direction: column;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Основна м'яка тінь */
-              0 2px 4px rgba(0, 0, 0, 0.06);
-                 margin: 10px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    margin: 10px 0;
   }
 
   .section__item img {

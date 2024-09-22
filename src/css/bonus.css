@@ -38,7 +38,7 @@
   text-transform: uppercase;
   color: #fcfcfc;
   text-decoration: none;
-  box-shadow: 0 4px 12px 0 rgba(14, 24, 17, 0.25); /* Зменшено тінь */
+  box-shadow: 0 4px 12px 0 rgba(14, 24, 17, 0.25);
   background: #ec622b;
   border: 1px solid #fff;
   border-radius: 16px;

@@ -9,10 +9,9 @@
   background: #fff;
   margin: 20px 0;
   border-radius: 6px;
-width: 295px;
-/* height: 707px; */
+  width: 295px;
 }
-.sidebar__events{
+.sidebar__events {
   padding: 20px 22px;
   background: #192a32;
 }
