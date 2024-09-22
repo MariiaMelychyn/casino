@@ -1,73 +1,62 @@
 <header class="header">
   <div class="header__block">
     <div class="header__logo">
-      <a href="index.html"> LOGO </a>
+      <a href="index.html">LOGO</a>
     </div>
 
     <nav class="header__nav" aria-label="Main Navigation">
       <ul class="header__nav-list">
         <li class="header__nav-item">
           <a href="bonus.html" class="header__nav-link">
-            <span class="icon icon-bonus" data-i18n="Bonuses"></span> Bonuses
+            <span class="icon icon-bonus"  data-i18n="Bonuses"></span> <span id="bonuses">Bonuses</span>
           </a>
         </li>
         <li class="header__nav-item">
           <a href="app.html" class="header__nav-link">
-            <span class="icon icon-app"></span> App
+            <span class="icon icon-app"></span> <span id="app">App</span>
           </a>
         </li>
         <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Live</a>
+          <a href="#" class="header__nav-link"><span id="live">Live</span></a>
         </li>
         <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Sports</a>
+          <a href="#" class="header__nav-link"><span id="sports">Sports</span></a>
         </li>
         <li class="header__nav-item">
-          <a href="#" class="header__nav-link">More</a>
+          <a href="#" class="header__nav-link"><span id="more">More</span></a>
         </li>
       </ul>
     </nav>
 
-    <div class="header__lang ">
+    <div class="header__lang">
       <label for="lang-select" class="sr-only"></label>
       <select class="header__lang-select" id="lang-select">
         <option value="at">AT</option>
-        <option value="en">EN</option>
+        <option value="en" selected>EN</option> <!-- EN за замовчуванням -->
         <option value="fr">FR</option>
         <option value="de">DE</option>
       </select>
       <div class="flag-container">
-        <img id="flag-img" src="images/lg/auvstralia.png" alt="Austria Flag" style="width: 20px; height: 15px;">
+        <img id="flag-img" src="images/lg/us.png" alt="England Flag" style="width: 20px; height: 15px;">
       </div>
     </div>
-    
-      <a
-        href="#"
-        class="header__button header__button--signup"
-        id="openSignupForm"
-        >Sign Up</a
-      >
-      <a
-        href="#"
-        class="header__button header__button--login"
-        id="openLoginForm"
-        >Log In</a
-      >
-      <a
-        href="#"
-        class="header__button header__button--logout"
-        id="logOutButton"
-        style="display: none"
-        >Log Out</a
-      >
-    </div>
 
-    <button class="burger" id="burgerMenu" aria-label="Open menu">
-      <span class="burger-line"></span>
-      <span class="burger-line"></span>
-      <span class="burger-line"></span>
-    </button>
+    <a href="#" class="header__button header__button--signup" id="openSignupForm">
+      <span id="signUp">Sign Up</span>
+    </a>
+    <a href="#" class="header__button header__button--login" id="openLoginForm">
+      <span id="logIn">Log In</span>
+    </a>
+    <a href="#" class="header__button header__button--logout" id="logOutButton" style="display: none">
+      <span id="logOut">Log Out</span>
+    </a>
   </div>
+
+  <button class="burger" id="burgerMenu" aria-label="Open menu">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
 </header>
 
 <div id="modalNav" class="modal-nav">
