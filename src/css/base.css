@@ -52,28 +52,7 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-  /* .block-casino{
-    display:flex;
-  } */
-  /* .hero-block {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    justify-content: space-between;
-    width: 768px;
-    box-sizing: border-box; 
-  } */
   
-  /* .hero-block > div:first-child {
-    flex-grow: 8; 
-    flex-shrink: 1; 
-  }
-  
-  .hero-block > .block-casino {
-    flex-grow: 2; 
-    flex-shrink: 1; 
-  }
-   */
 }
 
 @media screen and (min-width: 1200px) {
