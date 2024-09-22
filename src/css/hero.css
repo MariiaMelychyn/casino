@@ -96,3 +96,14 @@
     height: 48px;
   }
 }
+#signupFormHero {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-content h2{
+  margin-bottom: 20px;
+}
+.submit{
+  margin-top: 20px;
+}

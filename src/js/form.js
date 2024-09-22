@@ -1,27 +1,35 @@
 document.addEventListener('DOMContentLoaded', function () {
   const signupModal = document.getElementById('signupModal');
   const loginModal = document.getElementById('loginModal');
-
+  const signupModalHero = document.getElementById('signupModalHero');
   const openSignupBtn = document.getElementById('openSignupForm');
   const openLoginBtn = document.getElementById('openLoginForm');
+  const openSignupHeroBtn = document.getElementById('openSignupFromHero');
   const logOutBtn = document.getElementById('logOutButton');
-
   const closeSignupBtn = document.getElementById('closeSignupForm');
   const closeLoginBtn = document.getElementById('closeLoginForm');
+  const closeSignupHeroBtn = document.getElementById('closeSignupFormHero');
 
-  function openLoginModal() {
-    if (loginModal) {
-      loginModal.style.display = 'block';
+  function updateButtonState() {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+    if (isLoggedIn) {
+      if (openSignupBtn) openSignupBtn.style.display = 'none';
+      if (openLoginBtn) openLoginBtn.style.display = 'none';
+      if (logOutBtn) logOutBtn.style.display = 'inline-block';
     } else {
-      console.error('Login modal not found');
+      if (openSignupBtn) openSignupBtn.style.display = 'inline-block';
+      if (openLoginBtn) openLoginBtn.style.display = 'inline-block';
+      if (logOutBtn) logOutBtn.style.display = 'none';
     }
   }
 
-  function openSignupModal() {
-    if (signupModal) {
-      signupModal.style.display = 'block';
+  updateButtonState();
+  function openModal(modal) {
+    if (modal) {
+      modal.style.display = 'block';
     } else {
-      console.error('Signup modal not found');
+      console.error('Modal not found');
     }
   }
 
@@ -34,15 +42,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (openSignupBtn) {
-    openSignupBtn.addEventListener('click', openSignupModal);
+    openSignupBtn.addEventListener('click', function () {
+      openModal(signupModal);
+    });
   } else {
-    console.error('Signup button not found');
+    console.error('Signup button in header not found');
   }
 
   if (openLoginBtn) {
-    openLoginBtn.addEventListener('click', openLoginModal);
+    openLoginBtn.addEventListener('click', function () {
+      openModal(loginModal);
+    });
   } else {
-    console.error('Login button not found');
+    console.error('Login button in header not found');
   }
 
   if (closeSignupBtn) {
@@ -50,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
       closeModal(signupModal);
     });
   } else {
-    console.error('Close signup button not found');
+    console.error('Close signup button in header not found');
   }
 
   if (closeLoginBtn) {
@@ -58,7 +70,23 @@ document.addEventListener('DOMContentLoaded', function () {
       closeModal(loginModal);
     });
   } else {
-    console.error('Close login button not found');
+    console.error('Close login button in header not found');
+  }
+
+  if (openSignupHeroBtn) {
+    openSignupHeroBtn.addEventListener('click', function () {
+      openModal(signupModalHero);
+    });
+  } else {
+    console.error('Signup button in hero section not found');
+  }
+
+  if (closeSignupHeroBtn) {
+    closeSignupHeroBtn.addEventListener('click', function () {
+      closeModal(signupModalHero);
+    });
+  } else {
+    console.error('Close signup button in hero section not found');
   }
 
   window.addEventListener('click', function (event) {
@@ -68,51 +96,49 @@ document.addEventListener('DOMContentLoaded', function () {
     if (event.target === loginModal) {
       closeModal(loginModal);
     }
+    if (event.target === signupModalHero) {
+      closeModal(signupModalHero);
+    }
   });
+
+  function handleSignup(event, modal, formId) {
+    event.preventDefault();
+    const username = document
+      .getElementById(formId)
+      .querySelector('[name="username"]').value;
+    const password = document
+      .getElementById(formId)
+      .querySelector('[name="password"]').value;
+
+    console.log(`Зареєстровано: ${username}, пароль: ${password}`);
+
+    localStorage.setItem('isLoggedIn', 'true');
+    updateButtonState();
+
+    closeModal(modal);
+  }
 
   const signupForm = document.getElementById('signupForm');
   if (signupForm) {
     signupForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-      const username = document.getElementById('signupUsername').value;
-      const password = document.getElementById('signupPassword').value;
-
-      console.log(`Зареєстровано: ${username}, пароль: ${password}`);
-
-      if (openLoginBtn) openLoginBtn.style.display = 'none';
-      if (logOutBtn) logOutBtn.style.display = 'inline-block';
-
-      closeModal(signupModal);
+      handleSignup(event, signupModal, 'signupForm');
     });
   } else {
-    console.error('Signup form not found');
+    console.error('Signup form in header not found');
   }
 
-  const loginForm = document.getElementById('loginForm');
-  if (loginForm) {
-    loginForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-      const username = document.getElementById('loginUsername').value;
-      const password = document.getElementById('loginPassword').value;
-
-      console.log(`Вхід виконано: ${username}, пароль: ${password}`);
-
-      if (openLoginBtn) openLoginBtn.style.display = 'none';
-      if (logOutBtn) logOutBtn.style.display = 'inline-block';
-
-      closeModal(loginModal);
+  const signupFormHero = document.getElementById('signupFormHero');
+  if (signupFormHero) {
+    signupFormHero.addEventListener('submit', function (event) {
+      handleSignup(event, signupModalHero, 'signupFormHero');
     });
   } else {
-    console.error('Login form not found');
+    console.error('Signup form in hero section not found');
   }
-
   if (logOutBtn) {
     logOutBtn.addEventListener('click', function () {
-      if (openLoginBtn) openLoginBtn.style.display = 'inline-block';
-      logOutBtn.style.display = 'none';
-
-      closeModal(signupModal);
-      closeModal(loginModal);
+      localStorage.setItem('isLoggedIn', 'false');
+      updateButtonState();
 
       console.log('Користувач вийшов з системи');
     });

@@ -3,5 +3,19 @@
   <h1 class="banner__title">
     Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
   </h1>
-  <button class="banner__button">Sign Up</button>
+  <button type="submit" class="banner__button" id="openSignupFromHero">Sign Up</button>
 </section>
+
+<div id="signupModalHero" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeSignupFormHero">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signupFormHero">
+      <label for="signupUsernameHero">Username:</label>
+      <input type="text" id="signupUsernameHero" name="username" required />
+      <label for="signupPasswordHero">Password:</label>
+      <input type="password" id="signupPasswordHero" name="password" required />
+      <button type="submit" class="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
