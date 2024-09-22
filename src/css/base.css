@@ -15,7 +15,7 @@ body {
 
 @media screen and (min-width: 320px) {
   .container {
-    width: 320px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -24,8 +24,6 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    /* padding-left: 32px;
-    padding-right: 32px; */
   }
 }
 
@@ -37,7 +35,7 @@ body {
 
 @media screen and (min-width: 320px) {
   .container-footer {
-    width: 320px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -54,18 +52,19 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-  
-  .hero-block {
+  /* .block-casino{
+    display:flex;
+  } */
+  /* .hero-block {
     display: flex;
-    width: 1003px;
     align-items: flex-start;
     gap: 20px;
     justify-content: space-between;
-    width: 100%;
+    width: 768px;
     box-sizing: border-box; 
-  }
+  } */
   
-  .hero-block > div:first-child {
+  /* .hero-block > div:first-child {
     flex-grow: 8; 
     flex-shrink: 1; 
   }
@@ -74,7 +73,7 @@ body {
     flex-grow: 2; 
     flex-shrink: 1; 
   }
-  
+   */
 }
 
 @media screen and (min-width: 1200px) {
@@ -85,5 +84,14 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+  }
+  .hero-block {
+    display: flex;
+    width: 1003px;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box; 
   }
 }
