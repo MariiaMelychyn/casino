@@ -515,19 +515,19 @@ function setFlag(language) {
   const flagImg = document.getElementById('flag-img');
   switch (language) {
     case 'at':
-      flagImg.src = 'images/lg/auvstralia.png';
+      flagImg.src = '../images/lg/auvstralia.png';
       flagImg.alt = 'Austria Flag';
       break;
     case 'en':
-      flagImg.src = 'images/lg/us.png';
+      flagImg.src = '../images/lg/us.png';
       flagImg.alt = 'England Flag';
       break;
     case 'fr':
-      flagImg.src = 'images/lg/france.png';
+      flagImg.src = '../images/lg/france.png';
       flagImg.alt = 'France Flag';
       break;
     case 'de':
-      flagImg.src = 'images/lg/germany.png';
+      flagImg.src = '../images/lg/germany.png';
       flagImg.alt = 'Germany Flag';
       break;
   }
