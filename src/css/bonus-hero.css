@@ -1,9 +1,23 @@
-.bonus-hero{
-    position: relative;
-    background: url('../images/bonus-hero.png') no-repeat center center/cover;
-    border-radius: 6px;
-    width: 1240px;
+.bonus-hero {
+  position: relative;
+  background: linear-gradient(rgba(20, 30, 85, 0.5), rgba(20, 30, 85, 0.5)),
+    url('../images/bonus-hero.png') no-repeat center center/cover;
+  border-radius: 6px;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .bonus-hero {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bonus-hero {
+    width: 1280px;
     height: 384px;
-    margin: 0 auto;
-    background: rgba(20, 30, 85, 0.5), url("../images/bonus-hero.png");
+    background-size: cover;
+  }
 }

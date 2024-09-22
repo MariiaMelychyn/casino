@@ -1,84 +1,65 @@
-.bonus-sectio {
-  width: 1240px;
-  margin: 0 auto;
+.bonus-section {
+  padding: 20px;
+  margin: 20px auto;
 }
 
 .bonus-section__header {
-  margin-bottom: 30px;
-  border-radius: 6px;
-  padding: 32px 20px;
-  width: 1240px;
-  background: #fff;
   margin: 20px 0;
+  border-radius: 6px;
+  padding: 20px;
+  background: #fff;
 }
 
 .bonus-section__title {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.bonus-section__banner {
-  width: 1240px;
-  max-width: 100%;
-  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #192a32;
 }
 
 .bonus-section__text {
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 800px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #192a32;
-  text-align: left;
 }
 
 .bonus-section__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 1378px;
+  margin-bottom: 20px;
 }
 
 .bonus-section__list-item {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: #fff;
-  color: #000;
-  padding: 20px 66px;
+  padding: 20px;
   border-radius: 8px;
-  width: 90%;
-  max-width: 1240px;
-  gap: 113px;
+  gap: 10px;
 }
 
 .bonus-section__icon {
-  width: 80px;
-  height: 80px;
-  margin-right: 20px;
+  width: 60px;
+  height: 60px;
 }
 
 .bonus-section__content {
-  flex: 1;
   text-align: left;
 }
 
 .bonus-section__list-title {
-  font-size: 24px;
-  margin-bottom: 10px;
   font-weight: 700;
   font-size: 32px;
   text-transform: uppercase;
-  text-align: center;
-  color: #192a32;
   text-align: left;
+  color: #192a32;
 }
 
 .bonus-section__list-description {
-  font-size: 16px;
-  margin-bottom: 10px;
   font-weight: 400;
   font-size: 16px;
   color: #192a32;
@@ -86,38 +67,88 @@
 
 .bonus-section__btn {
   background-color: #ff6600;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
-  border: 1px solid #fff;
-  border-radius: 16px;
-  padding: 12px 30px;
-  width: 127px;
-  height: 48px;
-  background: #ec622b;
+  border: none;
+  padding: 12px 32px;
 }
 
 .bonus-section__btn:hover {
   background-color: #e65c00;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .bonus-section {
+    max-width: 768px;
+    margin: 20px auto;
+  }
+
+  .bonus-section__header {
+    padding: 30px;
+  }
+
+  .bonus-section__title {
+    font-size: 32px;
+  }
+
+  .bonus-section__text {
+    font-size: 18px;
+  }
+
   .bonus-section__list-item {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
   }
 
   .bonus-section__icon {
-    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bonus-sectio {
+    max-width: 925px;
+    margin: 20px auto;
   }
 
-  .bonus-section__list-title {
-    text-align: left;
+  .bonus-section__header {
+    padding: 40px;
+  }
+
+  .bonus-section__title {
+    font-size: 36px;
+  }
+
+  .bonus-section__list {
+    gap: 30px;
+  }
+
+  .bonus-section__list-item {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .bonus-section__icon {
+    width: 250px;
+    height: 250px;
+  }
+
+  .bonus-section__btn {
+    padding: 12px 30px;
+    border-radius: 16px;
+    width: 140px;
+  }
+  .bonus-section {
+    width: 925px;
+  }
+  .bonus-contaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 }
